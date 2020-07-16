@@ -13,6 +13,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -39,6 +40,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -61,6 +63,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -83,6 +86,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -101,6 +105,7 @@ Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -123,6 +128,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -145,6 +151,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -167,6 +174,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -191,6 +199,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -213,6 +222,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -226,7 +236,33 @@ Object {
 }
 `;
 
-exports[`#11 - babel (default) - function namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
+exports[`#11 - babel (default) - function ({x, y}) {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": true,
+  "isArrow": false,
+  "isAsync": false,
+  "isExpression": false,
+  "isGenerator": false,
+  "isNamed": false,
+  "isValid": true,
+  "name": null,
+  "params": "false",
+  "value": "function ({x, y}) {}",
+}
+`;
+
+exports[`#12 - babel (default) - function namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -239,6 +275,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -252,7 +289,7 @@ Object {
 }
 `;
 
-exports[`#12 - babel (default) - function namedFn (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
+exports[`#13 - babel (default) - function namedFn (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -265,6 +302,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -278,7 +316,7 @@ Object {
 }
 `;
 
-exports[`#13 - babel (default) - function namedFn (c) {return c * 3} 1`] = `
+exports[`#14 - babel (default) - function namedFn (c) {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -287,6 +325,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -300,7 +339,7 @@ Object {
 }
 `;
 
-exports[`#14 - babel (default) - function namedFn (...restArgs) {return 321} 1`] = `
+exports[`#15 - babel (default) - function namedFn (...restArgs) {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -309,6 +348,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -322,11 +362,12 @@ Object {
 }
 `;
 
-exports[`#15 - babel (default) - function namedFn () {} 1`] = `
+exports[`#16 - babel (default) - function namedFn () {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -340,7 +381,7 @@ Object {
 }
 `;
 
-exports[`#16 - babel (default) - function namedFn(a = (true, false)) {} 1`] = `
+exports[`#17 - babel (default) - function namedFn(a = (true, false)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -349,6 +390,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -362,7 +404,7 @@ Object {
 }
 `;
 
-exports[`#17 - babel (default) - function namedFn(a = (true, null)) {} 1`] = `
+exports[`#18 - babel (default) - function namedFn(a = (true, null)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -371,6 +413,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -384,7 +427,7 @@ Object {
 }
 `;
 
-exports[`#18 - babel (default) - function namedFn(a = (true, "bar")) {} 1`] = `
+exports[`#19 - babel (default) - function namedFn(a = (true, "bar")) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -393,6 +436,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -406,7 +450,7 @@ Object {
 }
 `;
 
-exports[`#19 - babel (default) - function namedFn(a, b = (i++, true)) {} 1`] = `
+exports[`#20 - babel (default) - function namedFn(a, b = (i++, true)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -417,6 +461,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -430,7 +475,7 @@ Object {
 }
 `;
 
-exports[`#20 - babel (default) - function namedFn(a = 1) {} 1`] = `
+exports[`#21 - babel (default) - function namedFn(a = 1) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -439,6 +484,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -452,7 +498,33 @@ Object {
 }
 `;
 
-exports[`#21 - babel (default) - function * namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
+exports[`#22 - babel (default) - function namedFn({x, y}) {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": false,
+  "isArrow": false,
+  "isAsync": false,
+  "isExpression": false,
+  "isGenerator": false,
+  "isNamed": true,
+  "isValid": true,
+  "name": "namedFn",
+  "params": "false",
+  "value": "function namedFn({x, y}) {}",
+}
+`;
+
+exports[`#23 - babel (default) - function * namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -465,6 +537,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -478,7 +551,7 @@ Object {
 }
 `;
 
-exports[`#22 - babel (default) - function * namedFn (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
+exports[`#24 - babel (default) - function * namedFn (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -491,6 +564,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -504,7 +578,7 @@ Object {
 }
 `;
 
-exports[`#23 - babel (default) - function * namedFn (c) {return c * 3} 1`] = `
+exports[`#25 - babel (default) - function * namedFn (c) {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -513,6 +587,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -526,7 +601,7 @@ Object {
 }
 `;
 
-exports[`#24 - babel (default) - function * namedFn (...restArgs) {return 321} 1`] = `
+exports[`#26 - babel (default) - function * namedFn (...restArgs) {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -535,6 +610,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -548,11 +624,12 @@ Object {
 }
 `;
 
-exports[`#25 - babel (default) - function * namedFn () {} 1`] = `
+exports[`#27 - babel (default) - function * namedFn () {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -566,7 +643,7 @@ Object {
 }
 `;
 
-exports[`#26 - babel (default) - function * namedFn(a = (true, false)) {} 1`] = `
+exports[`#28 - babel (default) - function * namedFn(a = (true, false)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -575,6 +652,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -588,7 +666,7 @@ Object {
 }
 `;
 
-exports[`#27 - babel (default) - function * namedFn(a = (true, null)) {} 1`] = `
+exports[`#29 - babel (default) - function * namedFn(a = (true, null)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -597,6 +675,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -610,7 +689,7 @@ Object {
 }
 `;
 
-exports[`#28 - babel (default) - function * namedFn(a = (true, "bar")) {} 1`] = `
+exports[`#30 - babel (default) - function * namedFn(a = (true, "bar")) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -619,6 +698,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -632,7 +712,7 @@ Object {
 }
 `;
 
-exports[`#29 - babel (default) - function * namedFn(a, b = (i++, true)) {} 1`] = `
+exports[`#31 - babel (default) - function * namedFn(a, b = (i++, true)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -643,6 +723,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -656,7 +737,7 @@ Object {
 }
 `;
 
-exports[`#30 - babel (default) - function * namedFn(a = 1) {} 1`] = `
+exports[`#32 - babel (default) - function * namedFn(a = 1) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -665,6 +746,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -678,7 +760,33 @@ Object {
 }
 `;
 
-exports[`#31 - babel (default) - a = {foo: "ba)r", baz: 123}, cb, ...restArgs) => {return a * 3} 1`] = `
+exports[`#33 - babel (default) - function * namedFn({x, y}) {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": false,
+  "isArrow": false,
+  "isAsync": false,
+  "isExpression": false,
+  "isGenerator": true,
+  "isNamed": true,
+  "isValid": true,
+  "name": "namedFn",
+  "params": "false",
+  "value": "function * namedFn({x, y}) {}",
+}
+`;
+
+exports[`#34 - babel (default) - a = {foo: "ba)r", baz: 123}, cb, ...restArgs) => {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -691,6 +799,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -704,7 +813,7 @@ Object {
 }
 `;
 
-exports[`#32 - babel (default) - b, callback, ...restArgs) => {callback(null, b + 3)} 1`] = `
+exports[`#35 - babel (default) - b, callback, ...restArgs) => {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -717,6 +826,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -730,7 +840,7 @@ Object {
 }
 `;
 
-exports[`#33 - babel (default) - c) => {return c * 3} 1`] = `
+exports[`#36 - babel (default) - c) => {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -739,6 +849,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -752,7 +863,7 @@ Object {
 }
 `;
 
-exports[`#34 - babel (default) - ...restArgs) => {return 321} 1`] = `
+exports[`#37 - babel (default) - ...restArgs) => {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -761,6 +872,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -774,11 +886,12 @@ Object {
 }
 `;
 
-exports[`#35 - babel (default) - ) => {} 1`] = `
+exports[`#38 - babel (default) - ) => {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -792,7 +905,7 @@ Object {
 }
 `;
 
-exports[`#36 - babel (default) - a = (true, false)) => {} 1`] = `
+exports[`#39 - babel (default) - a = (true, false)) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -801,6 +914,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -814,7 +928,7 @@ Object {
 }
 `;
 
-exports[`#37 - babel (default) - a = (true, null)) => {} 1`] = `
+exports[`#40 - babel (default) - a = (true, null)) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -823,6 +937,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -836,7 +951,7 @@ Object {
 }
 `;
 
-exports[`#38 - babel (default) - a = (true, "bar")) => {} 1`] = `
+exports[`#41 - babel (default) - a = (true, "bar")) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -845,6 +960,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -858,7 +974,7 @@ Object {
 }
 `;
 
-exports[`#39 - babel (default) - a, b = (i++, true)) => {} 1`] = `
+exports[`#42 - babel (default) - a, b = (i++, true)) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -869,6 +985,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -882,7 +999,7 @@ Object {
 }
 `;
 
-exports[`#40 - babel (default) - a = 1) => {} 1`] = `
+exports[`#43 - babel (default) - a = 1) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -891,6 +1008,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -904,7 +1022,7 @@ Object {
 }
 `;
 
-exports[`#41 - babel (default) - a) => a * 3 * a 1`] = `
+exports[`#44 - babel (default) - a) => a * 3 * a 1`] = `
 Object {
   "args": Array [
     "a",
@@ -913,6 +1031,7 @@ Object {
   "defaults": Object {
     "a": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -926,7 +1045,7 @@ Object {
 }
 `;
 
-exports[`#42 - babel (default) - d => d * 355 * d 1`] = `
+exports[`#45 - babel (default) - d => d * 355 * d 1`] = `
 Object {
   "args": Array [
     "d",
@@ -935,6 +1054,7 @@ Object {
   "defaults": Object {
     "d": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -948,7 +1068,7 @@ Object {
 }
 `;
 
-exports[`#43 - babel (default) - e => {return e + 5235 / e} 1`] = `
+exports[`#46 - babel (default) - e => {return e + 5235 / e} 1`] = `
 Object {
   "args": Array [
     "e",
@@ -957,6 +1077,7 @@ Object {
   "defaults": Object {
     "e": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -970,7 +1091,7 @@ Object {
 }
 `;
 
-exports[`#44 - babel (default) - a, b) => a + 3 + b 1`] = `
+exports[`#47 - babel (default) - a, b) => a + 3 + b 1`] = `
 Object {
   "args": Array [
     "a",
@@ -981,6 +1102,7 @@ Object {
     "a": undefined,
     "b": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -994,7 +1116,7 @@ Object {
 }
 `;
 
-exports[`#45 - babel (default) - x, y, ...restArgs) => console.log({ value: x * y } 1`] = `
+exports[`#48 - babel (default) - x, y, ...restArgs) => console.log({ value: x * y } 1`] = `
 Object {
   "args": Array [
     "x",
@@ -1007,6 +1129,7 @@ Object {
     "x": undefined,
     "y": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -1020,7 +1143,33 @@ Object {
 }
 `;
 
-exports[`#46 - babel (default) - async function (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
+exports[`#49 - babel (default) - x, y}) => {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": true,
+  "isArrow": true,
+  "isAsync": false,
+  "isExpression": false,
+  "isGenerator": false,
+  "isNamed": false,
+  "isValid": true,
+  "name": null,
+  "params": "false",
+  "value": "({x, y}) => {}",
+}
+`;
+
+exports[`#50 - babel (default) - async function (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -1033,6 +1182,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -1046,7 +1196,7 @@ Object {
 }
 `;
 
-exports[`#47 - babel (default) - async function (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
+exports[`#51 - babel (default) - async function (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -1059,6 +1209,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -1072,7 +1223,7 @@ Object {
 }
 `;
 
-exports[`#48 - babel (default) - async function (c) {return c * 3} 1`] = `
+exports[`#52 - babel (default) - async function (c) {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -1081,6 +1232,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -1094,7 +1246,7 @@ Object {
 }
 `;
 
-exports[`#49 - babel (default) - async function (...restArgs) {return 321} 1`] = `
+exports[`#53 - babel (default) - async function (...restArgs) {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -1103,6 +1255,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -1116,11 +1269,12 @@ Object {
 }
 `;
 
-exports[`#50 - babel (default) - async function () {} 1`] = `
+exports[`#54 - babel (default) - async function () {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -1134,7 +1288,7 @@ Object {
 }
 `;
 
-exports[`#51 - babel (default) - async function (a = (true, false)) {} 1`] = `
+exports[`#55 - babel (default) - async function (a = (true, false)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -1143,6 +1297,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -1156,7 +1311,7 @@ Object {
 }
 `;
 
-exports[`#52 - babel (default) - async function (a = (true, null)) {} 1`] = `
+exports[`#56 - babel (default) - async function (a = (true, null)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -1165,6 +1320,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -1178,7 +1334,7 @@ Object {
 }
 `;
 
-exports[`#53 - babel (default) - async function (a = (true, "bar")) {} 1`] = `
+exports[`#57 - babel (default) - async function (a = (true, "bar")) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -1187,6 +1343,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -1200,7 +1357,7 @@ Object {
 }
 `;
 
-exports[`#54 - babel (default) - async function (a, b = (i++, true)) {} 1`] = `
+exports[`#58 - babel (default) - async function (a, b = (i++, true)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -1211,6 +1368,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -1224,7 +1382,7 @@ Object {
 }
 `;
 
-exports[`#55 - babel (default) - async function (a = 1) {} 1`] = `
+exports[`#59 - babel (default) - async function (a = 1) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -1233,6 +1391,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -1246,7 +1405,33 @@ Object {
 }
 `;
 
-exports[`#56 - babel (default) - async function namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
+exports[`#60 - babel (default) - async function ({x, y}) {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": true,
+  "isArrow": false,
+  "isAsync": true,
+  "isExpression": false,
+  "isGenerator": false,
+  "isNamed": false,
+  "isValid": true,
+  "name": null,
+  "params": "false",
+  "value": "async function ({x, y}) {}",
+}
+`;
+
+exports[`#61 - babel (default) - async function namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -1259,6 +1444,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -1272,7 +1458,7 @@ Object {
 }
 `;
 
-exports[`#57 - babel (default) - async function namedFn (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
+exports[`#62 - babel (default) - async function namedFn (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -1285,6 +1471,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -1298,7 +1485,7 @@ Object {
 }
 `;
 
-exports[`#58 - babel (default) - async function namedFn (c) {return c * 3} 1`] = `
+exports[`#63 - babel (default) - async function namedFn (c) {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -1307,6 +1494,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -1320,7 +1508,7 @@ Object {
 }
 `;
 
-exports[`#59 - babel (default) - async function namedFn (...restArgs) {return 321} 1`] = `
+exports[`#64 - babel (default) - async function namedFn (...restArgs) {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -1329,6 +1517,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -1342,11 +1531,12 @@ Object {
 }
 `;
 
-exports[`#60 - babel (default) - async function namedFn () {} 1`] = `
+exports[`#65 - babel (default) - async function namedFn () {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -1360,7 +1550,7 @@ Object {
 }
 `;
 
-exports[`#61 - babel (default) - async function namedFn(a = (true, false)) {} 1`] = `
+exports[`#66 - babel (default) - async function namedFn(a = (true, false)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -1369,6 +1559,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -1382,7 +1573,7 @@ Object {
 }
 `;
 
-exports[`#62 - babel (default) - async function namedFn(a = (true, null)) {} 1`] = `
+exports[`#67 - babel (default) - async function namedFn(a = (true, null)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -1391,6 +1582,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -1404,7 +1596,7 @@ Object {
 }
 `;
 
-exports[`#63 - babel (default) - async function namedFn(a = (true, "bar")) {} 1`] = `
+exports[`#68 - babel (default) - async function namedFn(a = (true, "bar")) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -1413,6 +1605,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -1426,7 +1619,7 @@ Object {
 }
 `;
 
-exports[`#64 - babel (default) - async function namedFn(a, b = (i++, true)) {} 1`] = `
+exports[`#69 - babel (default) - async function namedFn(a, b = (i++, true)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -1437,6 +1630,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -1450,7 +1644,7 @@ Object {
 }
 `;
 
-exports[`#65 - babel (default) - async function namedFn(a = 1) {} 1`] = `
+exports[`#70 - babel (default) - async function namedFn(a = 1) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -1459,6 +1653,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -1472,7 +1667,33 @@ Object {
 }
 `;
 
-exports[`#66 - babel (default) - async (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) => {return a * 3} 1`] = `
+exports[`#71 - babel (default) - async function namedFn({x, y}) {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": false,
+  "isArrow": false,
+  "isAsync": true,
+  "isExpression": false,
+  "isGenerator": false,
+  "isNamed": true,
+  "isValid": true,
+  "name": "namedFn",
+  "params": "false",
+  "value": "async function namedFn({x, y}) {}",
+}
+`;
+
+exports[`#72 - babel (default) - async (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) => {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -1485,6 +1706,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -1498,7 +1720,7 @@ Object {
 }
 `;
 
-exports[`#67 - babel (default) - async (b, callback, ...restArgs) => {callback(null, b + 3)} 1`] = `
+exports[`#73 - babel (default) - async (b, callback, ...restArgs) => {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -1511,6 +1733,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -1524,7 +1747,7 @@ Object {
 }
 `;
 
-exports[`#68 - babel (default) - async (c) => {return c * 3} 1`] = `
+exports[`#74 - babel (default) - async (c) => {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -1533,6 +1756,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -1546,7 +1770,7 @@ Object {
 }
 `;
 
-exports[`#69 - babel (default) - async (...restArgs) => {return 321} 1`] = `
+exports[`#75 - babel (default) - async (...restArgs) => {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -1555,6 +1779,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -1568,11 +1793,12 @@ Object {
 }
 `;
 
-exports[`#70 - babel (default) - async () => {} 1`] = `
+exports[`#76 - babel (default) - async () => {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -1586,7 +1812,7 @@ Object {
 }
 `;
 
-exports[`#71 - babel (default) - async (a = (true, false)) => {} 1`] = `
+exports[`#77 - babel (default) - async (a = (true, false)) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -1595,6 +1821,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -1608,7 +1835,7 @@ Object {
 }
 `;
 
-exports[`#72 - babel (default) - async (a = (true, null)) => {} 1`] = `
+exports[`#78 - babel (default) - async (a = (true, null)) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -1617,6 +1844,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -1630,7 +1858,7 @@ Object {
 }
 `;
 
-exports[`#73 - babel (default) - async (a = (true, "bar")) => {} 1`] = `
+exports[`#79 - babel (default) - async (a = (true, "bar")) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -1639,6 +1867,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -1652,7 +1881,7 @@ Object {
 }
 `;
 
-exports[`#74 - babel (default) - async (a, b = (i++, true)) => {} 1`] = `
+exports[`#80 - babel (default) - async (a, b = (i++, true)) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -1663,6 +1892,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -1676,7 +1906,7 @@ Object {
 }
 `;
 
-exports[`#75 - babel (default) - async (a = 1) => {} 1`] = `
+exports[`#81 - babel (default) - async (a = 1) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -1685,6 +1915,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -1698,7 +1929,7 @@ Object {
 }
 `;
 
-exports[`#76 - babel (default) - async (a) => a * 3 * a 1`] = `
+exports[`#82 - babel (default) - async (a) => a * 3 * a 1`] = `
 Object {
   "args": Array [
     "a",
@@ -1707,6 +1938,7 @@ Object {
   "defaults": Object {
     "a": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -1720,7 +1952,7 @@ Object {
 }
 `;
 
-exports[`#77 - babel (default) - async d => d * 355 * d 1`] = `
+exports[`#83 - babel (default) - async d => d * 355 * d 1`] = `
 Object {
   "args": Array [
     "d",
@@ -1729,6 +1961,7 @@ Object {
   "defaults": Object {
     "d": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -1742,7 +1975,7 @@ Object {
 }
 `;
 
-exports[`#78 - babel (default) - async e => {return e + 5235 / e} 1`] = `
+exports[`#84 - babel (default) - async e => {return e + 5235 / e} 1`] = `
 Object {
   "args": Array [
     "e",
@@ -1751,6 +1984,7 @@ Object {
   "defaults": Object {
     "e": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -1764,7 +1998,7 @@ Object {
 }
 `;
 
-exports[`#79 - babel (default) - async (a, b) => a + 3 + b 1`] = `
+exports[`#85 - babel (default) - async (a, b) => a + 3 + b 1`] = `
 Object {
   "args": Array [
     "a",
@@ -1775,6 +2009,7 @@ Object {
     "a": undefined,
     "b": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -1788,7 +2023,7 @@ Object {
 }
 `;
 
-exports[`#80 - babel (default) - async (x, y, ...restArgs) => console.log({ value: x * y } 1`] = `
+exports[`#86 - babel (default) - async (x, y, ...restArgs) => console.log({ value: x * y } 1`] = `
 Object {
   "args": Array [
     "x",
@@ -1801,6 +2036,7 @@ Object {
     "x": undefined,
     "y": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -1814,7 +2050,33 @@ Object {
 }
 `;
 
-exports[`#81 - babel (default) - should return object with default values when invalid 1`] = `
+exports[`#87 - babel (default) - async ({x, y}) => {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": true,
+  "isArrow": true,
+  "isAsync": true,
+  "isExpression": false,
+  "isGenerator": false,
+  "isNamed": false,
+  "isValid": true,
+  "name": null,
+  "params": "false",
+  "value": "async ({x, y}) => {}",
+}
+`;
+
+exports[`#88 - babel (default) - should return object with default values when invalid 1`] = `
 Object {
   "args": Array [],
   "body": "",
@@ -1832,7 +2094,7 @@ Object {
 }
 `;
 
-exports[`#82 - babel (default) - should have '.isValid' and few '.is*'' hidden properties 1`] = `
+exports[`#89 - babel (default) - should have '.isValid' and few '.is*'' hidden properties 1`] = `
 Object {
   "args": Array [],
   "body": "",
@@ -1850,7 +2112,7 @@ Object {
 }
 `;
 
-exports[`#87 - babel (default) - should work for object methods 1`] = `
+exports[`#94 - babel (default) - should work for object methods 1`] = `
 Object {
   "args": Array [
     "a",
@@ -1865,6 +2127,7 @@ Object {
     "b": undefined,
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -1880,7 +2143,7 @@ Object {
 }
 `;
 
-exports[`#87 - babel (default) - should work for object methods 2`] = `
+exports[`#94 - babel (default) - should work for object methods 2`] = `
 Object {
   "args": Array [
     "a",
@@ -1891,6 +2154,7 @@ Object {
   "defaults": Object {
     "a": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -1906,7 +2170,7 @@ Object {
 }
 `;
 
-exports[`#87 - babel (default) - should work for object methods 3`] = `
+exports[`#94 - babel (default) - should work for object methods 3`] = `
 Object {
   "args": Array [
     "a",
@@ -1917,6 +2181,7 @@ Object {
   "defaults": Object {
     "a": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -1932,7 +2197,7 @@ Object {
 }
 `;
 
-exports[`#87 - babel (default) - should work for object methods 4`] = `
+exports[`#94 - babel (default) - should work for object methods 4`] = `
 Object {
   "args": Array [
     "a",
@@ -1945,6 +2210,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -1958,7 +2224,7 @@ Object {
 }
 `;
 
-exports[`#91 - options.parse + ecmaVersion: 2019 - function (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
+exports[`#98 - options.parse + ecmaVersion: 2019 - function (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -1971,6 +2237,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -1984,7 +2251,7 @@ Object {
 }
 `;
 
-exports[`#92 - options.parse + ecmaVersion: 2019 - function (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
+exports[`#99 - options.parse + ecmaVersion: 2019 - function (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -1997,6 +2264,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -2010,7 +2278,7 @@ Object {
 }
 `;
 
-exports[`#93 - options.parse + ecmaVersion: 2019 - function (c) {return c * 3} 1`] = `
+exports[`#100 - options.parse + ecmaVersion: 2019 - function (c) {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -2019,6 +2287,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -2032,7 +2301,7 @@ Object {
 }
 `;
 
-exports[`#94 - options.parse + ecmaVersion: 2019 - function (...restArgs) {return 321} 1`] = `
+exports[`#101 - options.parse + ecmaVersion: 2019 - function (...restArgs) {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -2041,6 +2310,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -2054,11 +2324,12 @@ Object {
 }
 `;
 
-exports[`#95 - options.parse + ecmaVersion: 2019 - function () {} 1`] = `
+exports[`#102 - options.parse + ecmaVersion: 2019 - function () {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -2072,7 +2343,7 @@ Object {
 }
 `;
 
-exports[`#96 - options.parse + ecmaVersion: 2019 - function (a = (true, false)) {} 1`] = `
+exports[`#103 - options.parse + ecmaVersion: 2019 - function (a = (true, false)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -2081,6 +2352,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -2094,7 +2366,7 @@ Object {
 }
 `;
 
-exports[`#97 - options.parse + ecmaVersion: 2019 - function (a = (true, null)) {} 1`] = `
+exports[`#104 - options.parse + ecmaVersion: 2019 - function (a = (true, null)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -2103,6 +2375,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -2116,7 +2389,7 @@ Object {
 }
 `;
 
-exports[`#98 - options.parse + ecmaVersion: 2019 - function (a = (true, "bar")) {} 1`] = `
+exports[`#105 - options.parse + ecmaVersion: 2019 - function (a = (true, "bar")) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -2125,6 +2398,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -2138,7 +2412,7 @@ Object {
 }
 `;
 
-exports[`#99 - options.parse + ecmaVersion: 2019 - function (a, b = (i++, true)) {} 1`] = `
+exports[`#106 - options.parse + ecmaVersion: 2019 - function (a, b = (i++, true)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -2149,6 +2423,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -2162,7 +2437,7 @@ Object {
 }
 `;
 
-exports[`#100 - options.parse + ecmaVersion: 2019 - function (a = 1) {} 1`] = `
+exports[`#107 - options.parse + ecmaVersion: 2019 - function (a = 1) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -2171,6 +2446,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -2184,7 +2460,33 @@ Object {
 }
 `;
 
-exports[`#101 - options.parse + ecmaVersion: 2019 - function namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
+exports[`#108 - options.parse + ecmaVersion: 2019 - function ({x, y}) {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": true,
+  "isArrow": false,
+  "isAsync": false,
+  "isExpression": false,
+  "isGenerator": false,
+  "isNamed": false,
+  "isValid": true,
+  "name": null,
+  "params": "false",
+  "value": "(function ({x, y}) {})",
+}
+`;
+
+exports[`#109 - options.parse + ecmaVersion: 2019 - function namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -2197,6 +2499,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -2210,7 +2513,7 @@ Object {
 }
 `;
 
-exports[`#102 - options.parse + ecmaVersion: 2019 - function namedFn (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
+exports[`#110 - options.parse + ecmaVersion: 2019 - function namedFn (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -2223,6 +2526,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -2236,7 +2540,7 @@ Object {
 }
 `;
 
-exports[`#103 - options.parse + ecmaVersion: 2019 - function namedFn (c) {return c * 3} 1`] = `
+exports[`#111 - options.parse + ecmaVersion: 2019 - function namedFn (c) {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -2245,6 +2549,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -2258,7 +2563,7 @@ Object {
 }
 `;
 
-exports[`#104 - options.parse + ecmaVersion: 2019 - function namedFn (...restArgs) {return 321} 1`] = `
+exports[`#112 - options.parse + ecmaVersion: 2019 - function namedFn (...restArgs) {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -2267,6 +2572,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -2280,11 +2586,12 @@ Object {
 }
 `;
 
-exports[`#105 - options.parse + ecmaVersion: 2019 - function namedFn () {} 1`] = `
+exports[`#113 - options.parse + ecmaVersion: 2019 - function namedFn () {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -2298,7 +2605,7 @@ Object {
 }
 `;
 
-exports[`#106 - options.parse + ecmaVersion: 2019 - function namedFn(a = (true, false)) {} 1`] = `
+exports[`#114 - options.parse + ecmaVersion: 2019 - function namedFn(a = (true, false)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -2307,6 +2614,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -2320,7 +2628,7 @@ Object {
 }
 `;
 
-exports[`#107 - options.parse + ecmaVersion: 2019 - function namedFn(a = (true, null)) {} 1`] = `
+exports[`#115 - options.parse + ecmaVersion: 2019 - function namedFn(a = (true, null)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -2329,6 +2637,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -2342,7 +2651,7 @@ Object {
 }
 `;
 
-exports[`#108 - options.parse + ecmaVersion: 2019 - function namedFn(a = (true, "bar")) {} 1`] = `
+exports[`#116 - options.parse + ecmaVersion: 2019 - function namedFn(a = (true, "bar")) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -2351,6 +2660,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -2364,7 +2674,7 @@ Object {
 }
 `;
 
-exports[`#109 - options.parse + ecmaVersion: 2019 - function namedFn(a, b = (i++, true)) {} 1`] = `
+exports[`#117 - options.parse + ecmaVersion: 2019 - function namedFn(a, b = (i++, true)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -2375,6 +2685,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -2388,7 +2699,7 @@ Object {
 }
 `;
 
-exports[`#110 - options.parse + ecmaVersion: 2019 - function namedFn(a = 1) {} 1`] = `
+exports[`#118 - options.parse + ecmaVersion: 2019 - function namedFn(a = 1) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -2397,6 +2708,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -2410,7 +2722,33 @@ Object {
 }
 `;
 
-exports[`#111 - options.parse + ecmaVersion: 2019 - function * namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
+exports[`#119 - options.parse + ecmaVersion: 2019 - function namedFn({x, y}) {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": false,
+  "isArrow": false,
+  "isAsync": false,
+  "isExpression": false,
+  "isGenerator": false,
+  "isNamed": true,
+  "isValid": true,
+  "name": "namedFn",
+  "params": "false",
+  "value": "(function namedFn({x, y}) {})",
+}
+`;
+
+exports[`#120 - options.parse + ecmaVersion: 2019 - function * namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -2423,6 +2761,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -2436,7 +2775,7 @@ Object {
 }
 `;
 
-exports[`#112 - options.parse + ecmaVersion: 2019 - function * namedFn (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
+exports[`#121 - options.parse + ecmaVersion: 2019 - function * namedFn (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -2449,6 +2788,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -2462,7 +2802,7 @@ Object {
 }
 `;
 
-exports[`#113 - options.parse + ecmaVersion: 2019 - function * namedFn (c) {return c * 3} 1`] = `
+exports[`#122 - options.parse + ecmaVersion: 2019 - function * namedFn (c) {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -2471,6 +2811,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -2484,7 +2825,7 @@ Object {
 }
 `;
 
-exports[`#114 - options.parse + ecmaVersion: 2019 - function * namedFn (...restArgs) {return 321} 1`] = `
+exports[`#123 - options.parse + ecmaVersion: 2019 - function * namedFn (...restArgs) {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -2493,6 +2834,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -2506,11 +2848,12 @@ Object {
 }
 `;
 
-exports[`#115 - options.parse + ecmaVersion: 2019 - function * namedFn () {} 1`] = `
+exports[`#124 - options.parse + ecmaVersion: 2019 - function * namedFn () {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -2524,7 +2867,7 @@ Object {
 }
 `;
 
-exports[`#116 - options.parse + ecmaVersion: 2019 - function * namedFn(a = (true, false)) {} 1`] = `
+exports[`#125 - options.parse + ecmaVersion: 2019 - function * namedFn(a = (true, false)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -2533,6 +2876,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -2546,7 +2890,7 @@ Object {
 }
 `;
 
-exports[`#117 - options.parse + ecmaVersion: 2019 - function * namedFn(a = (true, null)) {} 1`] = `
+exports[`#126 - options.parse + ecmaVersion: 2019 - function * namedFn(a = (true, null)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -2555,6 +2899,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -2568,7 +2913,7 @@ Object {
 }
 `;
 
-exports[`#118 - options.parse + ecmaVersion: 2019 - function * namedFn(a = (true, "bar")) {} 1`] = `
+exports[`#127 - options.parse + ecmaVersion: 2019 - function * namedFn(a = (true, "bar")) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -2577,6 +2922,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -2590,7 +2936,7 @@ Object {
 }
 `;
 
-exports[`#119 - options.parse + ecmaVersion: 2019 - function * namedFn(a, b = (i++, true)) {} 1`] = `
+exports[`#128 - options.parse + ecmaVersion: 2019 - function * namedFn(a, b = (i++, true)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -2601,6 +2947,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -2614,7 +2961,7 @@ Object {
 }
 `;
 
-exports[`#120 - options.parse + ecmaVersion: 2019 - function * namedFn(a = 1) {} 1`] = `
+exports[`#129 - options.parse + ecmaVersion: 2019 - function * namedFn(a = 1) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -2623,6 +2970,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -2636,7 +2984,33 @@ Object {
 }
 `;
 
-exports[`#121 - options.parse + ecmaVersion: 2019 - (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) => {return a * 3} 1`] = `
+exports[`#130 - options.parse + ecmaVersion: 2019 - function * namedFn({x, y}) {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": false,
+  "isArrow": false,
+  "isAsync": false,
+  "isExpression": false,
+  "isGenerator": true,
+  "isNamed": true,
+  "isValid": true,
+  "name": "namedFn",
+  "params": "false",
+  "value": "(function * namedFn({x, y}) {})",
+}
+`;
+
+exports[`#131 - options.parse + ecmaVersion: 2019 - (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) => {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -2649,6 +3023,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -2662,7 +3037,7 @@ Object {
 }
 `;
 
-exports[`#122 - options.parse + ecmaVersion: 2019 - (b, callback, ...restArgs) => {callback(null, b + 3)} 1`] = `
+exports[`#132 - options.parse + ecmaVersion: 2019 - (b, callback, ...restArgs) => {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -2675,6 +3050,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -2688,7 +3064,7 @@ Object {
 }
 `;
 
-exports[`#123 - options.parse + ecmaVersion: 2019 - (c) => {return c * 3} 1`] = `
+exports[`#133 - options.parse + ecmaVersion: 2019 - (c) => {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -2697,6 +3073,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -2710,7 +3087,7 @@ Object {
 }
 `;
 
-exports[`#124 - options.parse + ecmaVersion: 2019 - (...restArgs) => {return 321} 1`] = `
+exports[`#134 - options.parse + ecmaVersion: 2019 - (...restArgs) => {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -2719,6 +3096,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -2732,11 +3110,12 @@ Object {
 }
 `;
 
-exports[`#125 - options.parse + ecmaVersion: 2019 - () => {} 1`] = `
+exports[`#135 - options.parse + ecmaVersion: 2019 - () => {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -2750,7 +3129,7 @@ Object {
 }
 `;
 
-exports[`#126 - options.parse + ecmaVersion: 2019 - (a = (true, false)) => {} 1`] = `
+exports[`#136 - options.parse + ecmaVersion: 2019 - (a = (true, false)) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -2759,6 +3138,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -2772,7 +3152,7 @@ Object {
 }
 `;
 
-exports[`#127 - options.parse + ecmaVersion: 2019 - (a = (true, null)) => {} 1`] = `
+exports[`#137 - options.parse + ecmaVersion: 2019 - (a = (true, null)) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -2781,6 +3161,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -2794,7 +3175,7 @@ Object {
 }
 `;
 
-exports[`#128 - options.parse + ecmaVersion: 2019 - (a = (true, "bar")) => {} 1`] = `
+exports[`#138 - options.parse + ecmaVersion: 2019 - (a = (true, "bar")) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -2803,6 +3184,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -2816,7 +3198,7 @@ Object {
 }
 `;
 
-exports[`#129 - options.parse + ecmaVersion: 2019 - (a, b = (i++, true)) => {} 1`] = `
+exports[`#139 - options.parse + ecmaVersion: 2019 - (a, b = (i++, true)) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -2827,6 +3209,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -2840,7 +3223,7 @@ Object {
 }
 `;
 
-exports[`#130 - options.parse + ecmaVersion: 2019 - (a = 1) => {} 1`] = `
+exports[`#140 - options.parse + ecmaVersion: 2019 - (a = 1) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -2849,6 +3232,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -2862,7 +3246,7 @@ Object {
 }
 `;
 
-exports[`#131 - options.parse + ecmaVersion: 2019 - (a) => a * 3 * a 1`] = `
+exports[`#141 - options.parse + ecmaVersion: 2019 - (a) => a * 3 * a 1`] = `
 Object {
   "args": Array [
     "a",
@@ -2871,6 +3255,7 @@ Object {
   "defaults": Object {
     "a": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -2884,7 +3269,7 @@ Object {
 }
 `;
 
-exports[`#132 - options.parse + ecmaVersion: 2019 - d => d * 355 * d 1`] = `
+exports[`#142 - options.parse + ecmaVersion: 2019 - d => d * 355 * d 1`] = `
 Object {
   "args": Array [
     "d",
@@ -2893,6 +3278,7 @@ Object {
   "defaults": Object {
     "d": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -2906,7 +3292,7 @@ Object {
 }
 `;
 
-exports[`#133 - options.parse + ecmaVersion: 2019 - e => {return e + 5235 / e} 1`] = `
+exports[`#143 - options.parse + ecmaVersion: 2019 - e => {return e + 5235 / e} 1`] = `
 Object {
   "args": Array [
     "e",
@@ -2915,6 +3301,7 @@ Object {
   "defaults": Object {
     "e": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -2928,7 +3315,7 @@ Object {
 }
 `;
 
-exports[`#134 - options.parse + ecmaVersion: 2019 - (a, b) => a + 3 + b 1`] = `
+exports[`#144 - options.parse + ecmaVersion: 2019 - (a, b) => a + 3 + b 1`] = `
 Object {
   "args": Array [
     "a",
@@ -2939,6 +3326,7 @@ Object {
     "a": undefined,
     "b": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -2952,7 +3340,7 @@ Object {
 }
 `;
 
-exports[`#135 - options.parse + ecmaVersion: 2019 - (x, y, ...restArgs) => console.log({ value: x * y }) 1`] = `
+exports[`#145 - options.parse + ecmaVersion: 2019 - (x, y, ...restArgs) => console.log({ value: x * y }) 1`] = `
 Object {
   "args": Array [
     "x",
@@ -2965,6 +3353,7 @@ Object {
     "x": undefined,
     "y": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -2978,7 +3367,33 @@ Object {
 }
 `;
 
-exports[`#136 - options.parse + ecmaVersion: 2019 - async function (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
+exports[`#146 - options.parse + ecmaVersion: 2019 - ({x, y}) => {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": true,
+  "isArrow": true,
+  "isAsync": false,
+  "isExpression": false,
+  "isGenerator": false,
+  "isNamed": false,
+  "isValid": true,
+  "name": null,
+  "params": "false",
+  "value": "(({x, y}) => {})",
+}
+`;
+
+exports[`#147 - options.parse + ecmaVersion: 2019 - async function (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -2991,6 +3406,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -3004,7 +3420,7 @@ Object {
 }
 `;
 
-exports[`#137 - options.parse + ecmaVersion: 2019 - async function (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
+exports[`#148 - options.parse + ecmaVersion: 2019 - async function (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -3017,6 +3433,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -3030,7 +3447,7 @@ Object {
 }
 `;
 
-exports[`#138 - options.parse + ecmaVersion: 2019 - async function (c) {return c * 3} 1`] = `
+exports[`#149 - options.parse + ecmaVersion: 2019 - async function (c) {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -3039,6 +3456,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -3052,7 +3470,7 @@ Object {
 }
 `;
 
-exports[`#139 - options.parse + ecmaVersion: 2019 - async function (...restArgs) {return 321} 1`] = `
+exports[`#150 - options.parse + ecmaVersion: 2019 - async function (...restArgs) {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -3061,6 +3479,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -3074,11 +3493,12 @@ Object {
 }
 `;
 
-exports[`#140 - options.parse + ecmaVersion: 2019 - async function () {} 1`] = `
+exports[`#151 - options.parse + ecmaVersion: 2019 - async function () {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -3092,7 +3512,7 @@ Object {
 }
 `;
 
-exports[`#141 - options.parse + ecmaVersion: 2019 - async function (a = (true, false)) {} 1`] = `
+exports[`#152 - options.parse + ecmaVersion: 2019 - async function (a = (true, false)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -3101,6 +3521,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -3114,7 +3535,7 @@ Object {
 }
 `;
 
-exports[`#142 - options.parse + ecmaVersion: 2019 - async function (a = (true, null)) {} 1`] = `
+exports[`#153 - options.parse + ecmaVersion: 2019 - async function (a = (true, null)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -3123,6 +3544,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -3136,7 +3558,7 @@ Object {
 }
 `;
 
-exports[`#143 - options.parse + ecmaVersion: 2019 - async function (a = (true, "bar")) {} 1`] = `
+exports[`#154 - options.parse + ecmaVersion: 2019 - async function (a = (true, "bar")) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -3145,6 +3567,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -3158,7 +3581,7 @@ Object {
 }
 `;
 
-exports[`#144 - options.parse + ecmaVersion: 2019 - async function (a, b = (i++, true)) {} 1`] = `
+exports[`#155 - options.parse + ecmaVersion: 2019 - async function (a, b = (i++, true)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -3169,6 +3592,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -3182,7 +3606,7 @@ Object {
 }
 `;
 
-exports[`#145 - options.parse + ecmaVersion: 2019 - async function (a = 1) {} 1`] = `
+exports[`#156 - options.parse + ecmaVersion: 2019 - async function (a = 1) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -3191,6 +3615,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -3204,7 +3629,33 @@ Object {
 }
 `;
 
-exports[`#146 - options.parse + ecmaVersion: 2019 - async function namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
+exports[`#157 - options.parse + ecmaVersion: 2019 - async function ({x, y}) {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": true,
+  "isArrow": false,
+  "isAsync": true,
+  "isExpression": false,
+  "isGenerator": false,
+  "isNamed": false,
+  "isValid": true,
+  "name": null,
+  "params": "false",
+  "value": "(async function ({x, y}) {})",
+}
+`;
+
+exports[`#158 - options.parse + ecmaVersion: 2019 - async function namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -3217,6 +3668,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -3230,7 +3682,7 @@ Object {
 }
 `;
 
-exports[`#147 - options.parse + ecmaVersion: 2019 - async function namedFn (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
+exports[`#159 - options.parse + ecmaVersion: 2019 - async function namedFn (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -3243,6 +3695,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -3256,7 +3709,7 @@ Object {
 }
 `;
 
-exports[`#148 - options.parse + ecmaVersion: 2019 - async function namedFn (c) {return c * 3} 1`] = `
+exports[`#160 - options.parse + ecmaVersion: 2019 - async function namedFn (c) {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -3265,6 +3718,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -3278,7 +3732,7 @@ Object {
 }
 `;
 
-exports[`#149 - options.parse + ecmaVersion: 2019 - async function namedFn (...restArgs) {return 321} 1`] = `
+exports[`#161 - options.parse + ecmaVersion: 2019 - async function namedFn (...restArgs) {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -3287,6 +3741,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -3300,11 +3755,12 @@ Object {
 }
 `;
 
-exports[`#150 - options.parse + ecmaVersion: 2019 - async function namedFn () {} 1`] = `
+exports[`#162 - options.parse + ecmaVersion: 2019 - async function namedFn () {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -3318,7 +3774,7 @@ Object {
 }
 `;
 
-exports[`#151 - options.parse + ecmaVersion: 2019 - async function namedFn(a = (true, false)) {} 1`] = `
+exports[`#163 - options.parse + ecmaVersion: 2019 - async function namedFn(a = (true, false)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -3327,6 +3783,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -3340,7 +3797,7 @@ Object {
 }
 `;
 
-exports[`#152 - options.parse + ecmaVersion: 2019 - async function namedFn(a = (true, null)) {} 1`] = `
+exports[`#164 - options.parse + ecmaVersion: 2019 - async function namedFn(a = (true, null)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -3349,6 +3806,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -3362,7 +3820,7 @@ Object {
 }
 `;
 
-exports[`#153 - options.parse + ecmaVersion: 2019 - async function namedFn(a = (true, "bar")) {} 1`] = `
+exports[`#165 - options.parse + ecmaVersion: 2019 - async function namedFn(a = (true, "bar")) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -3371,6 +3829,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -3384,7 +3843,7 @@ Object {
 }
 `;
 
-exports[`#154 - options.parse + ecmaVersion: 2019 - async function namedFn(a, b = (i++, true)) {} 1`] = `
+exports[`#166 - options.parse + ecmaVersion: 2019 - async function namedFn(a, b = (i++, true)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -3395,6 +3854,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -3408,7 +3868,7 @@ Object {
 }
 `;
 
-exports[`#155 - options.parse + ecmaVersion: 2019 - async function namedFn(a = 1) {} 1`] = `
+exports[`#167 - options.parse + ecmaVersion: 2019 - async function namedFn(a = 1) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -3417,6 +3877,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -3430,7 +3891,33 @@ Object {
 }
 `;
 
-exports[`#156 - options.parse + ecmaVersion: 2019 - async (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) => {return a * 3} 1`] = `
+exports[`#168 - options.parse + ecmaVersion: 2019 - async function namedFn({x, y}) {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": false,
+  "isArrow": false,
+  "isAsync": true,
+  "isExpression": false,
+  "isGenerator": false,
+  "isNamed": true,
+  "isValid": true,
+  "name": "namedFn",
+  "params": "false",
+  "value": "(async function namedFn({x, y}) {})",
+}
+`;
+
+exports[`#169 - options.parse + ecmaVersion: 2019 - async (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) => {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -3443,6 +3930,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -3456,7 +3944,7 @@ Object {
 }
 `;
 
-exports[`#157 - options.parse + ecmaVersion: 2019 - async (b, callback, ...restArgs) => {callback(null, b + 3)} 1`] = `
+exports[`#170 - options.parse + ecmaVersion: 2019 - async (b, callback, ...restArgs) => {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -3469,6 +3957,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -3482,7 +3971,7 @@ Object {
 }
 `;
 
-exports[`#158 - options.parse + ecmaVersion: 2019 - async (c) => {return c * 3} 1`] = `
+exports[`#171 - options.parse + ecmaVersion: 2019 - async (c) => {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -3491,6 +3980,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -3504,7 +3994,7 @@ Object {
 }
 `;
 
-exports[`#159 - options.parse + ecmaVersion: 2019 - async (...restArgs) => {return 321} 1`] = `
+exports[`#172 - options.parse + ecmaVersion: 2019 - async (...restArgs) => {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -3513,6 +4003,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -3526,11 +4017,12 @@ Object {
 }
 `;
 
-exports[`#160 - options.parse + ecmaVersion: 2019 - async () => {} 1`] = `
+exports[`#173 - options.parse + ecmaVersion: 2019 - async () => {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -3544,7 +4036,7 @@ Object {
 }
 `;
 
-exports[`#161 - options.parse + ecmaVersion: 2019 - async (a = (true, false)) => {} 1`] = `
+exports[`#174 - options.parse + ecmaVersion: 2019 - async (a = (true, false)) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -3553,6 +4045,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -3566,7 +4059,7 @@ Object {
 }
 `;
 
-exports[`#162 - options.parse + ecmaVersion: 2019 - async (a = (true, null)) => {} 1`] = `
+exports[`#175 - options.parse + ecmaVersion: 2019 - async (a = (true, null)) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -3575,6 +4068,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -3588,7 +4082,7 @@ Object {
 }
 `;
 
-exports[`#163 - options.parse + ecmaVersion: 2019 - async (a = (true, "bar")) => {} 1`] = `
+exports[`#176 - options.parse + ecmaVersion: 2019 - async (a = (true, "bar")) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -3597,6 +4091,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -3610,7 +4105,7 @@ Object {
 }
 `;
 
-exports[`#164 - options.parse + ecmaVersion: 2019 - async (a, b = (i++, true)) => {} 1`] = `
+exports[`#177 - options.parse + ecmaVersion: 2019 - async (a, b = (i++, true)) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -3621,6 +4116,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -3634,7 +4130,7 @@ Object {
 }
 `;
 
-exports[`#165 - options.parse + ecmaVersion: 2019 - async (a = 1) => {} 1`] = `
+exports[`#178 - options.parse + ecmaVersion: 2019 - async (a = 1) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -3643,6 +4139,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -3656,7 +4153,7 @@ Object {
 }
 `;
 
-exports[`#166 - options.parse + ecmaVersion: 2019 - async (a) => a * 3 * a 1`] = `
+exports[`#179 - options.parse + ecmaVersion: 2019 - async (a) => a * 3 * a 1`] = `
 Object {
   "args": Array [
     "a",
@@ -3665,6 +4162,7 @@ Object {
   "defaults": Object {
     "a": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -3678,7 +4176,7 @@ Object {
 }
 `;
 
-exports[`#167 - options.parse + ecmaVersion: 2019 - async d => d * 355 * d 1`] = `
+exports[`#180 - options.parse + ecmaVersion: 2019 - async d => d * 355 * d 1`] = `
 Object {
   "args": Array [
     "d",
@@ -3687,6 +4185,7 @@ Object {
   "defaults": Object {
     "d": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -3700,7 +4199,7 @@ Object {
 }
 `;
 
-exports[`#168 - options.parse + ecmaVersion: 2019 - async e => {return e + 5235 / e} 1`] = `
+exports[`#181 - options.parse + ecmaVersion: 2019 - async e => {return e + 5235 / e} 1`] = `
 Object {
   "args": Array [
     "e",
@@ -3709,6 +4208,7 @@ Object {
   "defaults": Object {
     "e": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -3722,7 +4222,7 @@ Object {
 }
 `;
 
-exports[`#169 - options.parse + ecmaVersion: 2019 - async (a, b) => a + 3 + b 1`] = `
+exports[`#182 - options.parse + ecmaVersion: 2019 - async (a, b) => a + 3 + b 1`] = `
 Object {
   "args": Array [
     "a",
@@ -3733,6 +4233,7 @@ Object {
     "a": undefined,
     "b": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -3746,7 +4247,7 @@ Object {
 }
 `;
 
-exports[`#170 - options.parse + ecmaVersion: 2019 - async (x, y, ...restArgs) => console.log({ value: x * y }) 1`] = `
+exports[`#183 - options.parse + ecmaVersion: 2019 - async (x, y, ...restArgs) => console.log({ value: x * y }) 1`] = `
 Object {
   "args": Array [
     "x",
@@ -3759,6 +4260,7 @@ Object {
     "x": undefined,
     "y": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -3772,7 +4274,33 @@ Object {
 }
 `;
 
-exports[`#171 - options.parse + ecmaVersion: 2019 - should return object with default values when invalid 1`] = `
+exports[`#184 - options.parse + ecmaVersion: 2019 - async ({x, y}) => {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": true,
+  "isArrow": true,
+  "isAsync": true,
+  "isExpression": false,
+  "isGenerator": false,
+  "isNamed": false,
+  "isValid": true,
+  "name": null,
+  "params": "false",
+  "value": "(async ({x, y}) => {})",
+}
+`;
+
+exports[`#185 - options.parse + ecmaVersion: 2019 - should return object with default values when invalid 1`] = `
 Object {
   "args": Array [],
   "body": "",
@@ -3790,7 +4318,7 @@ Object {
 }
 `;
 
-exports[`#172 - options.parse + ecmaVersion: 2019 - should have '.isValid' and few '.is*'' hidden properties 1`] = `
+exports[`#186 - options.parse + ecmaVersion: 2019 - should have '.isValid' and few '.is*'' hidden properties 1`] = `
 Object {
   "args": Array [],
   "body": "",
@@ -3808,7 +4336,7 @@ Object {
 }
 `;
 
-exports[`#177 - options.parse + ecmaVersion: 2019 - should work for object methods 1`] = `
+exports[`#191 - options.parse + ecmaVersion: 2019 - should work for object methods 1`] = `
 Object {
   "args": Array [
     "a",
@@ -3823,6 +4351,7 @@ Object {
     "b": undefined,
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -3838,7 +4367,7 @@ Object {
 }
 `;
 
-exports[`#177 - options.parse + ecmaVersion: 2019 - should work for object methods 2`] = `
+exports[`#191 - options.parse + ecmaVersion: 2019 - should work for object methods 2`] = `
 Object {
   "args": Array [
     "a",
@@ -3849,6 +4378,7 @@ Object {
   "defaults": Object {
     "a": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -3864,7 +4394,7 @@ Object {
 }
 `;
 
-exports[`#177 - options.parse + ecmaVersion: 2019 - should work for object methods 3`] = `
+exports[`#191 - options.parse + ecmaVersion: 2019 - should work for object methods 3`] = `
 Object {
   "args": Array [
     "a",
@@ -3875,6 +4405,7 @@ Object {
   "defaults": Object {
     "a": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -3890,7 +4421,7 @@ Object {
 }
 `;
 
-exports[`#177 - options.parse + ecmaVersion: 2019 - should work for object methods 4`] = `
+exports[`#191 - options.parse + ecmaVersion: 2019 - should work for object methods 4`] = `
 Object {
   "args": Array [
     "a",
@@ -3903,6 +4434,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -3916,7 +4448,7 @@ Object {
 }
 `;
 
-exports[`#181 - acorn.parse - function (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
+exports[`#195 - acorn.parse - function (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -3929,6 +4461,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -3942,7 +4475,7 @@ Object {
 }
 `;
 
-exports[`#182 - acorn.parse - function (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
+exports[`#196 - acorn.parse - function (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -3955,6 +4488,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -3968,7 +4502,7 @@ Object {
 }
 `;
 
-exports[`#183 - acorn.parse - function (c) {return c * 3} 1`] = `
+exports[`#197 - acorn.parse - function (c) {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -3977,6 +4511,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -3990,7 +4525,7 @@ Object {
 }
 `;
 
-exports[`#184 - acorn.parse - function (...restArgs) {return 321} 1`] = `
+exports[`#198 - acorn.parse - function (...restArgs) {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -3999,6 +4534,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -4012,11 +4548,12 @@ Object {
 }
 `;
 
-exports[`#185 - acorn.parse - function () {} 1`] = `
+exports[`#199 - acorn.parse - function () {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -4030,7 +4567,7 @@ Object {
 }
 `;
 
-exports[`#186 - acorn.parse - function (a = (true, false)) {} 1`] = `
+exports[`#200 - acorn.parse - function (a = (true, false)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -4039,6 +4576,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -4052,7 +4590,7 @@ Object {
 }
 `;
 
-exports[`#187 - acorn.parse - function (a = (true, null)) {} 1`] = `
+exports[`#201 - acorn.parse - function (a = (true, null)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -4061,6 +4599,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -4074,7 +4613,7 @@ Object {
 }
 `;
 
-exports[`#188 - acorn.parse - function (a = (true, "bar")) {} 1`] = `
+exports[`#202 - acorn.parse - function (a = (true, "bar")) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -4083,6 +4622,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -4096,7 +4636,7 @@ Object {
 }
 `;
 
-exports[`#189 - acorn.parse - function (a, b = (i++, true)) {} 1`] = `
+exports[`#203 - acorn.parse - function (a, b = (i++, true)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -4107,6 +4647,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -4120,7 +4661,7 @@ Object {
 }
 `;
 
-exports[`#190 - acorn.parse - function (a = 1) {} 1`] = `
+exports[`#204 - acorn.parse - function (a = 1) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -4129,6 +4670,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -4142,7 +4684,33 @@ Object {
 }
 `;
 
-exports[`#191 - acorn.parse - function namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
+exports[`#205 - acorn.parse - function ({x, y}) {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": true,
+  "isArrow": false,
+  "isAsync": false,
+  "isExpression": false,
+  "isGenerator": false,
+  "isNamed": false,
+  "isValid": true,
+  "name": null,
+  "params": "false",
+  "value": "(function ({x, y}) {})",
+}
+`;
+
+exports[`#206 - acorn.parse - function namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -4155,6 +4723,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -4168,7 +4737,7 @@ Object {
 }
 `;
 
-exports[`#192 - acorn.parse - function namedFn (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
+exports[`#207 - acorn.parse - function namedFn (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -4181,6 +4750,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -4194,7 +4764,7 @@ Object {
 }
 `;
 
-exports[`#193 - acorn.parse - function namedFn (c) {return c * 3} 1`] = `
+exports[`#208 - acorn.parse - function namedFn (c) {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -4203,6 +4773,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -4216,7 +4787,7 @@ Object {
 }
 `;
 
-exports[`#194 - acorn.parse - function namedFn (...restArgs) {return 321} 1`] = `
+exports[`#209 - acorn.parse - function namedFn (...restArgs) {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -4225,6 +4796,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -4238,11 +4810,12 @@ Object {
 }
 `;
 
-exports[`#195 - acorn.parse - function namedFn () {} 1`] = `
+exports[`#210 - acorn.parse - function namedFn () {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -4256,7 +4829,7 @@ Object {
 }
 `;
 
-exports[`#196 - acorn.parse - function namedFn(a = (true, false)) {} 1`] = `
+exports[`#211 - acorn.parse - function namedFn(a = (true, false)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -4265,6 +4838,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -4278,7 +4852,7 @@ Object {
 }
 `;
 
-exports[`#197 - acorn.parse - function namedFn(a = (true, null)) {} 1`] = `
+exports[`#212 - acorn.parse - function namedFn(a = (true, null)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -4287,6 +4861,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -4300,7 +4875,7 @@ Object {
 }
 `;
 
-exports[`#198 - acorn.parse - function namedFn(a = (true, "bar")) {} 1`] = `
+exports[`#213 - acorn.parse - function namedFn(a = (true, "bar")) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -4309,6 +4884,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -4322,7 +4898,7 @@ Object {
 }
 `;
 
-exports[`#199 - acorn.parse - function namedFn(a, b = (i++, true)) {} 1`] = `
+exports[`#214 - acorn.parse - function namedFn(a, b = (i++, true)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -4333,6 +4909,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -4346,7 +4923,7 @@ Object {
 }
 `;
 
-exports[`#200 - acorn.parse - function namedFn(a = 1) {} 1`] = `
+exports[`#215 - acorn.parse - function namedFn(a = 1) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -4355,6 +4932,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -4368,7 +4946,33 @@ Object {
 }
 `;
 
-exports[`#201 - acorn.parse - function * namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
+exports[`#216 - acorn.parse - function namedFn({x, y}) {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": false,
+  "isArrow": false,
+  "isAsync": false,
+  "isExpression": false,
+  "isGenerator": false,
+  "isNamed": true,
+  "isValid": true,
+  "name": "namedFn",
+  "params": "false",
+  "value": "(function namedFn({x, y}) {})",
+}
+`;
+
+exports[`#217 - acorn.parse - function * namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -4381,6 +4985,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -4394,7 +4999,7 @@ Object {
 }
 `;
 
-exports[`#202 - acorn.parse - function * namedFn (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
+exports[`#218 - acorn.parse - function * namedFn (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -4407,6 +5012,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -4420,7 +5026,7 @@ Object {
 }
 `;
 
-exports[`#203 - acorn.parse - function * namedFn (c) {return c * 3} 1`] = `
+exports[`#219 - acorn.parse - function * namedFn (c) {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -4429,6 +5035,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -4442,7 +5049,7 @@ Object {
 }
 `;
 
-exports[`#204 - acorn.parse - function * namedFn (...restArgs) {return 321} 1`] = `
+exports[`#220 - acorn.parse - function * namedFn (...restArgs) {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -4451,6 +5058,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -4464,11 +5072,12 @@ Object {
 }
 `;
 
-exports[`#205 - acorn.parse - function * namedFn () {} 1`] = `
+exports[`#221 - acorn.parse - function * namedFn () {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -4482,7 +5091,7 @@ Object {
 }
 `;
 
-exports[`#206 - acorn.parse - function * namedFn(a = (true, false)) {} 1`] = `
+exports[`#222 - acorn.parse - function * namedFn(a = (true, false)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -4491,6 +5100,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -4504,7 +5114,7 @@ Object {
 }
 `;
 
-exports[`#207 - acorn.parse - function * namedFn(a = (true, null)) {} 1`] = `
+exports[`#223 - acorn.parse - function * namedFn(a = (true, null)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -4513,6 +5123,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -4526,7 +5137,7 @@ Object {
 }
 `;
 
-exports[`#208 - acorn.parse - function * namedFn(a = (true, "bar")) {} 1`] = `
+exports[`#224 - acorn.parse - function * namedFn(a = (true, "bar")) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -4535,6 +5146,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -4548,7 +5160,7 @@ Object {
 }
 `;
 
-exports[`#209 - acorn.parse - function * namedFn(a, b = (i++, true)) {} 1`] = `
+exports[`#225 - acorn.parse - function * namedFn(a, b = (i++, true)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -4559,6 +5171,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -4572,7 +5185,7 @@ Object {
 }
 `;
 
-exports[`#210 - acorn.parse - function * namedFn(a = 1) {} 1`] = `
+exports[`#226 - acorn.parse - function * namedFn(a = 1) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -4581,6 +5194,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -4594,7 +5208,33 @@ Object {
 }
 `;
 
-exports[`#211 - acorn.parse - (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) => {return a * 3} 1`] = `
+exports[`#227 - acorn.parse - function * namedFn({x, y}) {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": false,
+  "isArrow": false,
+  "isAsync": false,
+  "isExpression": false,
+  "isGenerator": true,
+  "isNamed": true,
+  "isValid": true,
+  "name": "namedFn",
+  "params": "false",
+  "value": "(function * namedFn({x, y}) {})",
+}
+`;
+
+exports[`#228 - acorn.parse - (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) => {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -4607,6 +5247,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -4620,7 +5261,7 @@ Object {
 }
 `;
 
-exports[`#212 - acorn.parse - (b, callback, ...restArgs) => {callback(null, b + 3)} 1`] = `
+exports[`#229 - acorn.parse - (b, callback, ...restArgs) => {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -4633,6 +5274,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -4646,7 +5288,7 @@ Object {
 }
 `;
 
-exports[`#213 - acorn.parse - (c) => {return c * 3} 1`] = `
+exports[`#230 - acorn.parse - (c) => {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -4655,6 +5297,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -4668,7 +5311,7 @@ Object {
 }
 `;
 
-exports[`#214 - acorn.parse - (...restArgs) => {return 321} 1`] = `
+exports[`#231 - acorn.parse - (...restArgs) => {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -4677,6 +5320,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -4690,11 +5334,12 @@ Object {
 }
 `;
 
-exports[`#215 - acorn.parse - () => {} 1`] = `
+exports[`#232 - acorn.parse - () => {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -4708,7 +5353,7 @@ Object {
 }
 `;
 
-exports[`#216 - acorn.parse - (a = (true, false)) => {} 1`] = `
+exports[`#233 - acorn.parse - (a = (true, false)) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -4717,6 +5362,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -4730,7 +5376,7 @@ Object {
 }
 `;
 
-exports[`#217 - acorn.parse - (a = (true, null)) => {} 1`] = `
+exports[`#234 - acorn.parse - (a = (true, null)) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -4739,6 +5385,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -4752,7 +5399,7 @@ Object {
 }
 `;
 
-exports[`#218 - acorn.parse - (a = (true, "bar")) => {} 1`] = `
+exports[`#235 - acorn.parse - (a = (true, "bar")) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -4761,6 +5408,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -4774,7 +5422,7 @@ Object {
 }
 `;
 
-exports[`#219 - acorn.parse - (a, b = (i++, true)) => {} 1`] = `
+exports[`#236 - acorn.parse - (a, b = (i++, true)) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -4785,6 +5433,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -4798,7 +5447,7 @@ Object {
 }
 `;
 
-exports[`#220 - acorn.parse - (a = 1) => {} 1`] = `
+exports[`#237 - acorn.parse - (a = 1) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -4807,6 +5456,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -4820,7 +5470,7 @@ Object {
 }
 `;
 
-exports[`#221 - acorn.parse - (a) => a * 3 * a 1`] = `
+exports[`#238 - acorn.parse - (a) => a * 3 * a 1`] = `
 Object {
   "args": Array [
     "a",
@@ -4829,6 +5479,7 @@ Object {
   "defaults": Object {
     "a": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -4842,7 +5493,7 @@ Object {
 }
 `;
 
-exports[`#222 - acorn.parse - d => d * 355 * d 1`] = `
+exports[`#239 - acorn.parse - d => d * 355 * d 1`] = `
 Object {
   "args": Array [
     "d",
@@ -4851,6 +5502,7 @@ Object {
   "defaults": Object {
     "d": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -4864,7 +5516,7 @@ Object {
 }
 `;
 
-exports[`#223 - acorn.parse - e => {return e + 5235 / e} 1`] = `
+exports[`#240 - acorn.parse - e => {return e + 5235 / e} 1`] = `
 Object {
   "args": Array [
     "e",
@@ -4873,6 +5525,7 @@ Object {
   "defaults": Object {
     "e": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -4886,7 +5539,7 @@ Object {
 }
 `;
 
-exports[`#224 - acorn.parse - (a, b) => a + 3 + b 1`] = `
+exports[`#241 - acorn.parse - (a, b) => a + 3 + b 1`] = `
 Object {
   "args": Array [
     "a",
@@ -4897,6 +5550,7 @@ Object {
     "a": undefined,
     "b": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -4910,7 +5564,7 @@ Object {
 }
 `;
 
-exports[`#225 - acorn.parse - (x, y, ...restArgs) => console.log({ value: x * y }) 1`] = `
+exports[`#242 - acorn.parse - (x, y, ...restArgs) => console.log({ value: x * y }) 1`] = `
 Object {
   "args": Array [
     "x",
@@ -4923,6 +5577,7 @@ Object {
     "x": undefined,
     "y": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -4936,7 +5591,33 @@ Object {
 }
 `;
 
-exports[`#226 - acorn.parse - async function (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
+exports[`#243 - acorn.parse - ({x, y}) => {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": true,
+  "isArrow": true,
+  "isAsync": false,
+  "isExpression": false,
+  "isGenerator": false,
+  "isNamed": false,
+  "isValid": true,
+  "name": null,
+  "params": "false",
+  "value": "(({x, y}) => {})",
+}
+`;
+
+exports[`#244 - acorn.parse - async function (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -4949,6 +5630,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -4962,7 +5644,7 @@ Object {
 }
 `;
 
-exports[`#227 - acorn.parse - async function (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
+exports[`#245 - acorn.parse - async function (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -4975,6 +5657,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -4988,7 +5671,7 @@ Object {
 }
 `;
 
-exports[`#228 - acorn.parse - async function (c) {return c * 3} 1`] = `
+exports[`#246 - acorn.parse - async function (c) {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -4997,6 +5680,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -5010,7 +5694,7 @@ Object {
 }
 `;
 
-exports[`#229 - acorn.parse - async function (...restArgs) {return 321} 1`] = `
+exports[`#247 - acorn.parse - async function (...restArgs) {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -5019,6 +5703,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -5032,11 +5717,12 @@ Object {
 }
 `;
 
-exports[`#230 - acorn.parse - async function () {} 1`] = `
+exports[`#248 - acorn.parse - async function () {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -5050,7 +5736,7 @@ Object {
 }
 `;
 
-exports[`#231 - acorn.parse - async function (a = (true, false)) {} 1`] = `
+exports[`#249 - acorn.parse - async function (a = (true, false)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -5059,6 +5745,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -5072,7 +5759,7 @@ Object {
 }
 `;
 
-exports[`#232 - acorn.parse - async function (a = (true, null)) {} 1`] = `
+exports[`#250 - acorn.parse - async function (a = (true, null)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -5081,6 +5768,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -5094,7 +5782,7 @@ Object {
 }
 `;
 
-exports[`#233 - acorn.parse - async function (a = (true, "bar")) {} 1`] = `
+exports[`#251 - acorn.parse - async function (a = (true, "bar")) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -5103,6 +5791,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -5116,7 +5805,7 @@ Object {
 }
 `;
 
-exports[`#234 - acorn.parse - async function (a, b = (i++, true)) {} 1`] = `
+exports[`#252 - acorn.parse - async function (a, b = (i++, true)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -5127,6 +5816,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -5140,7 +5830,7 @@ Object {
 }
 `;
 
-exports[`#235 - acorn.parse - async function (a = 1) {} 1`] = `
+exports[`#253 - acorn.parse - async function (a = 1) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -5149,6 +5839,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -5162,7 +5853,33 @@ Object {
 }
 `;
 
-exports[`#236 - acorn.parse - async function namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
+exports[`#254 - acorn.parse - async function ({x, y}) {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": true,
+  "isArrow": false,
+  "isAsync": true,
+  "isExpression": false,
+  "isGenerator": false,
+  "isNamed": false,
+  "isValid": true,
+  "name": null,
+  "params": "false",
+  "value": "(async function ({x, y}) {})",
+}
+`;
+
+exports[`#255 - acorn.parse - async function namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -5175,6 +5892,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -5188,7 +5906,7 @@ Object {
 }
 `;
 
-exports[`#237 - acorn.parse - async function namedFn (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
+exports[`#256 - acorn.parse - async function namedFn (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -5201,6 +5919,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -5214,7 +5933,7 @@ Object {
 }
 `;
 
-exports[`#238 - acorn.parse - async function namedFn (c) {return c * 3} 1`] = `
+exports[`#257 - acorn.parse - async function namedFn (c) {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -5223,6 +5942,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -5236,7 +5956,7 @@ Object {
 }
 `;
 
-exports[`#239 - acorn.parse - async function namedFn (...restArgs) {return 321} 1`] = `
+exports[`#258 - acorn.parse - async function namedFn (...restArgs) {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -5245,6 +5965,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -5258,11 +5979,12 @@ Object {
 }
 `;
 
-exports[`#240 - acorn.parse - async function namedFn () {} 1`] = `
+exports[`#259 - acorn.parse - async function namedFn () {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -5276,7 +5998,7 @@ Object {
 }
 `;
 
-exports[`#241 - acorn.parse - async function namedFn(a = (true, false)) {} 1`] = `
+exports[`#260 - acorn.parse - async function namedFn(a = (true, false)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -5285,6 +6007,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -5298,7 +6021,7 @@ Object {
 }
 `;
 
-exports[`#242 - acorn.parse - async function namedFn(a = (true, null)) {} 1`] = `
+exports[`#261 - acorn.parse - async function namedFn(a = (true, null)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -5307,6 +6030,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -5320,7 +6044,7 @@ Object {
 }
 `;
 
-exports[`#243 - acorn.parse - async function namedFn(a = (true, "bar")) {} 1`] = `
+exports[`#262 - acorn.parse - async function namedFn(a = (true, "bar")) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -5329,6 +6053,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -5342,7 +6067,7 @@ Object {
 }
 `;
 
-exports[`#244 - acorn.parse - async function namedFn(a, b = (i++, true)) {} 1`] = `
+exports[`#263 - acorn.parse - async function namedFn(a, b = (i++, true)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -5353,6 +6078,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -5366,7 +6092,7 @@ Object {
 }
 `;
 
-exports[`#245 - acorn.parse - async function namedFn(a = 1) {} 1`] = `
+exports[`#264 - acorn.parse - async function namedFn(a = 1) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -5375,6 +6101,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -5388,7 +6115,33 @@ Object {
 }
 `;
 
-exports[`#246 - acorn.parse - async (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) => {return a * 3} 1`] = `
+exports[`#265 - acorn.parse - async function namedFn({x, y}) {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": false,
+  "isArrow": false,
+  "isAsync": true,
+  "isExpression": false,
+  "isGenerator": false,
+  "isNamed": true,
+  "isValid": true,
+  "name": "namedFn",
+  "params": "false",
+  "value": "(async function namedFn({x, y}) {})",
+}
+`;
+
+exports[`#266 - acorn.parse - async (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) => {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -5401,6 +6154,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -5414,7 +6168,7 @@ Object {
 }
 `;
 
-exports[`#247 - acorn.parse - async (b, callback, ...restArgs) => {callback(null, b + 3)} 1`] = `
+exports[`#267 - acorn.parse - async (b, callback, ...restArgs) => {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -5427,6 +6181,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -5440,7 +6195,7 @@ Object {
 }
 `;
 
-exports[`#248 - acorn.parse - async (c) => {return c * 3} 1`] = `
+exports[`#268 - acorn.parse - async (c) => {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -5449,6 +6204,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -5462,7 +6218,7 @@ Object {
 }
 `;
 
-exports[`#249 - acorn.parse - async (...restArgs) => {return 321} 1`] = `
+exports[`#269 - acorn.parse - async (...restArgs) => {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -5471,6 +6227,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -5484,11 +6241,12 @@ Object {
 }
 `;
 
-exports[`#250 - acorn.parse - async () => {} 1`] = `
+exports[`#270 - acorn.parse - async () => {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -5502,7 +6260,7 @@ Object {
 }
 `;
 
-exports[`#251 - acorn.parse - async (a = (true, false)) => {} 1`] = `
+exports[`#271 - acorn.parse - async (a = (true, false)) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -5511,6 +6269,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -5524,7 +6283,7 @@ Object {
 }
 `;
 
-exports[`#252 - acorn.parse - async (a = (true, null)) => {} 1`] = `
+exports[`#272 - acorn.parse - async (a = (true, null)) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -5533,6 +6292,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -5546,7 +6306,7 @@ Object {
 }
 `;
 
-exports[`#253 - acorn.parse - async (a = (true, "bar")) => {} 1`] = `
+exports[`#273 - acorn.parse - async (a = (true, "bar")) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -5555,6 +6315,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -5568,7 +6329,7 @@ Object {
 }
 `;
 
-exports[`#254 - acorn.parse - async (a, b = (i++, true)) => {} 1`] = `
+exports[`#274 - acorn.parse - async (a, b = (i++, true)) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -5579,6 +6340,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -5592,7 +6354,7 @@ Object {
 }
 `;
 
-exports[`#255 - acorn.parse - async (a = 1) => {} 1`] = `
+exports[`#275 - acorn.parse - async (a = 1) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -5601,6 +6363,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -5614,7 +6377,7 @@ Object {
 }
 `;
 
-exports[`#256 - acorn.parse - async (a) => a * 3 * a 1`] = `
+exports[`#276 - acorn.parse - async (a) => a * 3 * a 1`] = `
 Object {
   "args": Array [
     "a",
@@ -5623,6 +6386,7 @@ Object {
   "defaults": Object {
     "a": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -5636,7 +6400,7 @@ Object {
 }
 `;
 
-exports[`#257 - acorn.parse - async d => d * 355 * d 1`] = `
+exports[`#277 - acorn.parse - async d => d * 355 * d 1`] = `
 Object {
   "args": Array [
     "d",
@@ -5645,6 +6409,7 @@ Object {
   "defaults": Object {
     "d": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -5658,7 +6423,7 @@ Object {
 }
 `;
 
-exports[`#258 - acorn.parse - async e => {return e + 5235 / e} 1`] = `
+exports[`#278 - acorn.parse - async e => {return e + 5235 / e} 1`] = `
 Object {
   "args": Array [
     "e",
@@ -5667,6 +6432,7 @@ Object {
   "defaults": Object {
     "e": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -5680,7 +6446,7 @@ Object {
 }
 `;
 
-exports[`#259 - acorn.parse - async (a, b) => a + 3 + b 1`] = `
+exports[`#279 - acorn.parse - async (a, b) => a + 3 + b 1`] = `
 Object {
   "args": Array [
     "a",
@@ -5691,6 +6457,7 @@ Object {
     "a": undefined,
     "b": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -5704,7 +6471,7 @@ Object {
 }
 `;
 
-exports[`#260 - acorn.parse - async (x, y, ...restArgs) => console.log({ value: x * y }) 1`] = `
+exports[`#280 - acorn.parse - async (x, y, ...restArgs) => console.log({ value: x * y }) 1`] = `
 Object {
   "args": Array [
     "x",
@@ -5717,6 +6484,7 @@ Object {
     "x": undefined,
     "y": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -5730,7 +6498,33 @@ Object {
 }
 `;
 
-exports[`#261 - acorn.parse - should return object with default values when invalid 1`] = `
+exports[`#281 - acorn.parse - async ({x, y}) => {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": true,
+  "isArrow": true,
+  "isAsync": true,
+  "isExpression": false,
+  "isGenerator": false,
+  "isNamed": false,
+  "isValid": true,
+  "name": null,
+  "params": "false",
+  "value": "(async ({x, y}) => {})",
+}
+`;
+
+exports[`#282 - acorn.parse - should return object with default values when invalid 1`] = `
 Object {
   "args": Array [],
   "body": "",
@@ -5748,7 +6542,7 @@ Object {
 }
 `;
 
-exports[`#262 - acorn.parse - should have '.isValid' and few '.is*'' hidden properties 1`] = `
+exports[`#283 - acorn.parse - should have '.isValid' and few '.is*'' hidden properties 1`] = `
 Object {
   "args": Array [],
   "body": "",
@@ -5766,7 +6560,7 @@ Object {
 }
 `;
 
-exports[`#267 - acorn.parse - should work for object methods 1`] = `
+exports[`#288 - acorn.parse - should work for object methods 1`] = `
 Object {
   "args": Array [
     "a",
@@ -5781,6 +6575,7 @@ Object {
     "b": undefined,
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -5796,7 +6591,7 @@ Object {
 }
 `;
 
-exports[`#267 - acorn.parse - should work for object methods 2`] = `
+exports[`#288 - acorn.parse - should work for object methods 2`] = `
 Object {
   "args": Array [
     "a",
@@ -5807,6 +6602,7 @@ Object {
   "defaults": Object {
     "a": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -5822,7 +6618,7 @@ Object {
 }
 `;
 
-exports[`#267 - acorn.parse - should work for object methods 3`] = `
+exports[`#288 - acorn.parse - should work for object methods 3`] = `
 Object {
   "args": Array [
     "a",
@@ -5833,6 +6629,7 @@ Object {
   "defaults": Object {
     "a": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -5848,7 +6645,7 @@ Object {
 }
 `;
 
-exports[`#267 - acorn.parse - should work for object methods 4`] = `
+exports[`#288 - acorn.parse - should work for object methods 4`] = `
 Object {
   "args": Array [
     "a",
@@ -5861,6 +6658,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -5874,7 +6672,7 @@ Object {
 }
 `;
 
-exports[`#271 - acorn loose - function (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
+exports[`#292 - acorn loose - function (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -5887,6 +6685,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -5900,7 +6699,7 @@ Object {
 }
 `;
 
-exports[`#272 - acorn loose - function (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
+exports[`#293 - acorn loose - function (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -5913,6 +6712,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -5926,7 +6726,7 @@ Object {
 }
 `;
 
-exports[`#273 - acorn loose - function (c) {return c * 3} 1`] = `
+exports[`#294 - acorn loose - function (c) {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -5935,6 +6735,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -5948,7 +6749,7 @@ Object {
 }
 `;
 
-exports[`#274 - acorn loose - function (...restArgs) {return 321} 1`] = `
+exports[`#295 - acorn loose - function (...restArgs) {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -5957,6 +6758,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -5970,11 +6772,12 @@ Object {
 }
 `;
 
-exports[`#275 - acorn loose - function () {} 1`] = `
+exports[`#296 - acorn loose - function () {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -5988,7 +6791,7 @@ Object {
 }
 `;
 
-exports[`#276 - acorn loose - function (a = (true, false)) {} 1`] = `
+exports[`#297 - acorn loose - function (a = (true, false)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -5997,6 +6800,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -6010,7 +6814,7 @@ Object {
 }
 `;
 
-exports[`#277 - acorn loose - function (a = (true, null)) {} 1`] = `
+exports[`#298 - acorn loose - function (a = (true, null)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -6019,6 +6823,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -6032,7 +6837,7 @@ Object {
 }
 `;
 
-exports[`#278 - acorn loose - function (a = (true, "bar")) {} 1`] = `
+exports[`#299 - acorn loose - function (a = (true, "bar")) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -6041,6 +6846,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -6054,7 +6860,7 @@ Object {
 }
 `;
 
-exports[`#279 - acorn loose - function (a, b = (i++, true)) {} 1`] = `
+exports[`#300 - acorn loose - function (a, b = (i++, true)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -6065,6 +6871,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -6078,7 +6885,7 @@ Object {
 }
 `;
 
-exports[`#280 - acorn loose - function (a = 1) {} 1`] = `
+exports[`#301 - acorn loose - function (a = 1) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -6087,6 +6894,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -6100,7 +6908,33 @@ Object {
 }
 `;
 
-exports[`#281 - acorn loose - function namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
+exports[`#302 - acorn loose - function ({x, y}) {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": true,
+  "isArrow": false,
+  "isAsync": false,
+  "isExpression": false,
+  "isGenerator": false,
+  "isNamed": false,
+  "isValid": true,
+  "name": null,
+  "params": "false",
+  "value": "(function ({x, y}) {})",
+}
+`;
+
+exports[`#303 - acorn loose - function namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -6113,6 +6947,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -6126,7 +6961,7 @@ Object {
 }
 `;
 
-exports[`#282 - acorn loose - function namedFn (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
+exports[`#304 - acorn loose - function namedFn (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -6139,6 +6974,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -6152,7 +6988,7 @@ Object {
 }
 `;
 
-exports[`#283 - acorn loose - function namedFn (c) {return c * 3} 1`] = `
+exports[`#305 - acorn loose - function namedFn (c) {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -6161,6 +6997,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -6174,7 +7011,7 @@ Object {
 }
 `;
 
-exports[`#284 - acorn loose - function namedFn (...restArgs) {return 321} 1`] = `
+exports[`#306 - acorn loose - function namedFn (...restArgs) {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -6183,6 +7020,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -6196,11 +7034,12 @@ Object {
 }
 `;
 
-exports[`#285 - acorn loose - function namedFn () {} 1`] = `
+exports[`#307 - acorn loose - function namedFn () {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -6214,7 +7053,7 @@ Object {
 }
 `;
 
-exports[`#286 - acorn loose - function namedFn(a = (true, false)) {} 1`] = `
+exports[`#308 - acorn loose - function namedFn(a = (true, false)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -6223,6 +7062,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -6236,7 +7076,7 @@ Object {
 }
 `;
 
-exports[`#287 - acorn loose - function namedFn(a = (true, null)) {} 1`] = `
+exports[`#309 - acorn loose - function namedFn(a = (true, null)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -6245,6 +7085,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -6258,7 +7099,7 @@ Object {
 }
 `;
 
-exports[`#288 - acorn loose - function namedFn(a = (true, "bar")) {} 1`] = `
+exports[`#310 - acorn loose - function namedFn(a = (true, "bar")) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -6267,6 +7108,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -6280,7 +7122,7 @@ Object {
 }
 `;
 
-exports[`#289 - acorn loose - function namedFn(a, b = (i++, true)) {} 1`] = `
+exports[`#311 - acorn loose - function namedFn(a, b = (i++, true)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -6291,6 +7133,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -6304,7 +7147,7 @@ Object {
 }
 `;
 
-exports[`#290 - acorn loose - function namedFn(a = 1) {} 1`] = `
+exports[`#312 - acorn loose - function namedFn(a = 1) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -6313,6 +7156,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -6326,7 +7170,33 @@ Object {
 }
 `;
 
-exports[`#291 - acorn loose - function * namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
+exports[`#313 - acorn loose - function namedFn({x, y}) {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": false,
+  "isArrow": false,
+  "isAsync": false,
+  "isExpression": false,
+  "isGenerator": false,
+  "isNamed": true,
+  "isValid": true,
+  "name": "namedFn",
+  "params": "false",
+  "value": "(function namedFn({x, y}) {})",
+}
+`;
+
+exports[`#314 - acorn loose - function * namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -6339,6 +7209,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -6352,7 +7223,7 @@ Object {
 }
 `;
 
-exports[`#292 - acorn loose - function * namedFn (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
+exports[`#315 - acorn loose - function * namedFn (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -6365,6 +7236,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -6378,7 +7250,7 @@ Object {
 }
 `;
 
-exports[`#293 - acorn loose - function * namedFn (c) {return c * 3} 1`] = `
+exports[`#316 - acorn loose - function * namedFn (c) {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -6387,6 +7259,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -6400,7 +7273,7 @@ Object {
 }
 `;
 
-exports[`#294 - acorn loose - function * namedFn (...restArgs) {return 321} 1`] = `
+exports[`#317 - acorn loose - function * namedFn (...restArgs) {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -6409,6 +7282,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -6422,11 +7296,12 @@ Object {
 }
 `;
 
-exports[`#295 - acorn loose - function * namedFn () {} 1`] = `
+exports[`#318 - acorn loose - function * namedFn () {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -6440,7 +7315,7 @@ Object {
 }
 `;
 
-exports[`#296 - acorn loose - function * namedFn(a = (true, false)) {} 1`] = `
+exports[`#319 - acorn loose - function * namedFn(a = (true, false)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -6449,6 +7324,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -6462,7 +7338,7 @@ Object {
 }
 `;
 
-exports[`#297 - acorn loose - function * namedFn(a = (true, null)) {} 1`] = `
+exports[`#320 - acorn loose - function * namedFn(a = (true, null)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -6471,6 +7347,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -6484,7 +7361,7 @@ Object {
 }
 `;
 
-exports[`#298 - acorn loose - function * namedFn(a = (true, "bar")) {} 1`] = `
+exports[`#321 - acorn loose - function * namedFn(a = (true, "bar")) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -6493,6 +7370,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -6506,7 +7384,7 @@ Object {
 }
 `;
 
-exports[`#299 - acorn loose - function * namedFn(a, b = (i++, true)) {} 1`] = `
+exports[`#322 - acorn loose - function * namedFn(a, b = (i++, true)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -6517,6 +7395,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -6530,7 +7409,7 @@ Object {
 }
 `;
 
-exports[`#300 - acorn loose - function * namedFn(a = 1) {} 1`] = `
+exports[`#323 - acorn loose - function * namedFn(a = 1) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -6539,6 +7418,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -6552,7 +7432,33 @@ Object {
 }
 `;
 
-exports[`#301 - acorn loose - (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) => {return a * 3} 1`] = `
+exports[`#324 - acorn loose - function * namedFn({x, y}) {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": false,
+  "isArrow": false,
+  "isAsync": false,
+  "isExpression": false,
+  "isGenerator": true,
+  "isNamed": true,
+  "isValid": true,
+  "name": "namedFn",
+  "params": "false",
+  "value": "(function * namedFn({x, y}) {})",
+}
+`;
+
+exports[`#325 - acorn loose - (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) => {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -6565,6 +7471,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -6578,7 +7485,7 @@ Object {
 }
 `;
 
-exports[`#302 - acorn loose - (b, callback, ...restArgs) => {callback(null, b + 3)} 1`] = `
+exports[`#326 - acorn loose - (b, callback, ...restArgs) => {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -6591,6 +7498,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -6604,7 +7512,7 @@ Object {
 }
 `;
 
-exports[`#303 - acorn loose - (c) => {return c * 3} 1`] = `
+exports[`#327 - acorn loose - (c) => {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -6613,6 +7521,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -6626,7 +7535,7 @@ Object {
 }
 `;
 
-exports[`#304 - acorn loose - (...restArgs) => {return 321} 1`] = `
+exports[`#328 - acorn loose - (...restArgs) => {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -6635,6 +7544,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -6648,11 +7558,12 @@ Object {
 }
 `;
 
-exports[`#305 - acorn loose - () => {} 1`] = `
+exports[`#329 - acorn loose - () => {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -6666,7 +7577,7 @@ Object {
 }
 `;
 
-exports[`#306 - acorn loose - (a = (true, false)) => {} 1`] = `
+exports[`#330 - acorn loose - (a = (true, false)) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -6675,6 +7586,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -6688,7 +7600,7 @@ Object {
 }
 `;
 
-exports[`#307 - acorn loose - (a = (true, null)) => {} 1`] = `
+exports[`#331 - acorn loose - (a = (true, null)) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -6697,6 +7609,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -6710,7 +7623,7 @@ Object {
 }
 `;
 
-exports[`#308 - acorn loose - (a = (true, "bar")) => {} 1`] = `
+exports[`#332 - acorn loose - (a = (true, "bar")) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -6719,6 +7632,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -6732,7 +7646,7 @@ Object {
 }
 `;
 
-exports[`#309 - acorn loose - (a, b = (i++, true)) => {} 1`] = `
+exports[`#333 - acorn loose - (a, b = (i++, true)) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -6743,6 +7657,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -6756,7 +7671,7 @@ Object {
 }
 `;
 
-exports[`#310 - acorn loose - (a = 1) => {} 1`] = `
+exports[`#334 - acorn loose - (a = 1) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -6765,6 +7680,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -6778,7 +7694,7 @@ Object {
 }
 `;
 
-exports[`#311 - acorn loose - (a) => a * 3 * a 1`] = `
+exports[`#335 - acorn loose - (a) => a * 3 * a 1`] = `
 Object {
   "args": Array [
     "a",
@@ -6787,6 +7703,7 @@ Object {
   "defaults": Object {
     "a": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -6800,7 +7717,7 @@ Object {
 }
 `;
 
-exports[`#312 - acorn loose - d => d * 355 * d 1`] = `
+exports[`#336 - acorn loose - d => d * 355 * d 1`] = `
 Object {
   "args": Array [
     "d",
@@ -6809,6 +7726,7 @@ Object {
   "defaults": Object {
     "d": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -6822,7 +7740,7 @@ Object {
 }
 `;
 
-exports[`#313 - acorn loose - e => {return e + 5235 / e} 1`] = `
+exports[`#337 - acorn loose - e => {return e + 5235 / e} 1`] = `
 Object {
   "args": Array [
     "e",
@@ -6831,6 +7749,7 @@ Object {
   "defaults": Object {
     "e": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -6844,7 +7763,7 @@ Object {
 }
 `;
 
-exports[`#314 - acorn loose - (a, b) => a + 3 + b 1`] = `
+exports[`#338 - acorn loose - (a, b) => a + 3 + b 1`] = `
 Object {
   "args": Array [
     "a",
@@ -6855,6 +7774,7 @@ Object {
     "a": undefined,
     "b": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -6868,7 +7788,7 @@ Object {
 }
 `;
 
-exports[`#315 - acorn loose - (x, y, ...restArgs) => console.log({ value: x * y }) 1`] = `
+exports[`#339 - acorn loose - (x, y, ...restArgs) => console.log({ value: x * y }) 1`] = `
 Object {
   "args": Array [
     "x",
@@ -6881,6 +7801,7 @@ Object {
     "x": undefined,
     "y": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -6894,7 +7815,33 @@ Object {
 }
 `;
 
-exports[`#316 - acorn loose - async function (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
+exports[`#340 - acorn loose - ({x, y}) => {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": true,
+  "isArrow": true,
+  "isAsync": false,
+  "isExpression": false,
+  "isGenerator": false,
+  "isNamed": false,
+  "isValid": true,
+  "name": null,
+  "params": "false",
+  "value": "(({x, y}) => {})",
+}
+`;
+
+exports[`#341 - acorn loose - async function (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -6907,6 +7854,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -6920,7 +7868,7 @@ Object {
 }
 `;
 
-exports[`#317 - acorn loose - async function (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
+exports[`#342 - acorn loose - async function (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -6933,6 +7881,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -6946,7 +7895,7 @@ Object {
 }
 `;
 
-exports[`#318 - acorn loose - async function (c) {return c * 3} 1`] = `
+exports[`#343 - acorn loose - async function (c) {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -6955,6 +7904,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -6968,7 +7918,7 @@ Object {
 }
 `;
 
-exports[`#319 - acorn loose - async function (...restArgs) {return 321} 1`] = `
+exports[`#344 - acorn loose - async function (...restArgs) {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -6977,6 +7927,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -6990,11 +7941,12 @@ Object {
 }
 `;
 
-exports[`#320 - acorn loose - async function () {} 1`] = `
+exports[`#345 - acorn loose - async function () {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -7008,7 +7960,7 @@ Object {
 }
 `;
 
-exports[`#321 - acorn loose - async function (a = (true, false)) {} 1`] = `
+exports[`#346 - acorn loose - async function (a = (true, false)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -7017,6 +7969,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -7030,7 +7983,7 @@ Object {
 }
 `;
 
-exports[`#322 - acorn loose - async function (a = (true, null)) {} 1`] = `
+exports[`#347 - acorn loose - async function (a = (true, null)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -7039,6 +7992,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -7052,7 +8006,7 @@ Object {
 }
 `;
 
-exports[`#323 - acorn loose - async function (a = (true, "bar")) {} 1`] = `
+exports[`#348 - acorn loose - async function (a = (true, "bar")) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -7061,6 +8015,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -7074,7 +8029,7 @@ Object {
 }
 `;
 
-exports[`#324 - acorn loose - async function (a, b = (i++, true)) {} 1`] = `
+exports[`#349 - acorn loose - async function (a, b = (i++, true)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -7085,6 +8040,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -7098,7 +8054,7 @@ Object {
 }
 `;
 
-exports[`#325 - acorn loose - async function (a = 1) {} 1`] = `
+exports[`#350 - acorn loose - async function (a = 1) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -7107,6 +8063,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -7120,7 +8077,33 @@ Object {
 }
 `;
 
-exports[`#326 - acorn loose - async function namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
+exports[`#351 - acorn loose - async function ({x, y}) {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": true,
+  "isArrow": false,
+  "isAsync": true,
+  "isExpression": false,
+  "isGenerator": false,
+  "isNamed": false,
+  "isValid": true,
+  "name": null,
+  "params": "false",
+  "value": "(async function ({x, y}) {})",
+}
+`;
+
+exports[`#352 - acorn loose - async function namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -7133,6 +8116,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -7146,7 +8130,7 @@ Object {
 }
 `;
 
-exports[`#327 - acorn loose - async function namedFn (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
+exports[`#353 - acorn loose - async function namedFn (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -7159,6 +8143,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -7172,7 +8157,7 @@ Object {
 }
 `;
 
-exports[`#328 - acorn loose - async function namedFn (c) {return c * 3} 1`] = `
+exports[`#354 - acorn loose - async function namedFn (c) {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -7181,6 +8166,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -7194,7 +8180,7 @@ Object {
 }
 `;
 
-exports[`#329 - acorn loose - async function namedFn (...restArgs) {return 321} 1`] = `
+exports[`#355 - acorn loose - async function namedFn (...restArgs) {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -7203,6 +8189,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -7216,11 +8203,12 @@ Object {
 }
 `;
 
-exports[`#330 - acorn loose - async function namedFn () {} 1`] = `
+exports[`#356 - acorn loose - async function namedFn () {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -7234,7 +8222,7 @@ Object {
 }
 `;
 
-exports[`#331 - acorn loose - async function namedFn(a = (true, false)) {} 1`] = `
+exports[`#357 - acorn loose - async function namedFn(a = (true, false)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -7243,6 +8231,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -7256,7 +8245,7 @@ Object {
 }
 `;
 
-exports[`#332 - acorn loose - async function namedFn(a = (true, null)) {} 1`] = `
+exports[`#358 - acorn loose - async function namedFn(a = (true, null)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -7265,6 +8254,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -7278,7 +8268,7 @@ Object {
 }
 `;
 
-exports[`#333 - acorn loose - async function namedFn(a = (true, "bar")) {} 1`] = `
+exports[`#359 - acorn loose - async function namedFn(a = (true, "bar")) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -7287,6 +8277,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -7300,7 +8291,7 @@ Object {
 }
 `;
 
-exports[`#334 - acorn loose - async function namedFn(a, b = (i++, true)) {} 1`] = `
+exports[`#360 - acorn loose - async function namedFn(a, b = (i++, true)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -7311,6 +8302,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -7324,7 +8316,7 @@ Object {
 }
 `;
 
-exports[`#335 - acorn loose - async function namedFn(a = 1) {} 1`] = `
+exports[`#361 - acorn loose - async function namedFn(a = 1) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -7333,6 +8325,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -7346,7 +8339,33 @@ Object {
 }
 `;
 
-exports[`#336 - acorn loose - async (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) => {return a * 3} 1`] = `
+exports[`#362 - acorn loose - async function namedFn({x, y}) {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": false,
+  "isArrow": false,
+  "isAsync": true,
+  "isExpression": false,
+  "isGenerator": false,
+  "isNamed": true,
+  "isValid": true,
+  "name": "namedFn",
+  "params": "false",
+  "value": "(async function namedFn({x, y}) {})",
+}
+`;
+
+exports[`#363 - acorn loose - async (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) => {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -7359,6 +8378,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -7372,7 +8392,7 @@ Object {
 }
 `;
 
-exports[`#337 - acorn loose - async (b, callback, ...restArgs) => {callback(null, b + 3)} 1`] = `
+exports[`#364 - acorn loose - async (b, callback, ...restArgs) => {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -7385,6 +8405,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -7398,7 +8419,7 @@ Object {
 }
 `;
 
-exports[`#338 - acorn loose - async (c) => {return c * 3} 1`] = `
+exports[`#365 - acorn loose - async (c) => {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -7407,6 +8428,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -7420,7 +8442,7 @@ Object {
 }
 `;
 
-exports[`#339 - acorn loose - async (...restArgs) => {return 321} 1`] = `
+exports[`#366 - acorn loose - async (...restArgs) => {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -7429,6 +8451,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -7442,11 +8465,12 @@ Object {
 }
 `;
 
-exports[`#340 - acorn loose - async () => {} 1`] = `
+exports[`#367 - acorn loose - async () => {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -7460,7 +8484,7 @@ Object {
 }
 `;
 
-exports[`#341 - acorn loose - async (a = (true, false)) => {} 1`] = `
+exports[`#368 - acorn loose - async (a = (true, false)) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -7469,6 +8493,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -7482,7 +8507,7 @@ Object {
 }
 `;
 
-exports[`#342 - acorn loose - async (a = (true, null)) => {} 1`] = `
+exports[`#369 - acorn loose - async (a = (true, null)) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -7491,6 +8516,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -7504,7 +8530,7 @@ Object {
 }
 `;
 
-exports[`#343 - acorn loose - async (a = (true, "bar")) => {} 1`] = `
+exports[`#370 - acorn loose - async (a = (true, "bar")) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -7513,6 +8539,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -7526,7 +8553,7 @@ Object {
 }
 `;
 
-exports[`#344 - acorn loose - async (a, b = (i++, true)) => {} 1`] = `
+exports[`#371 - acorn loose - async (a, b = (i++, true)) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -7537,6 +8564,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -7550,7 +8578,7 @@ Object {
 }
 `;
 
-exports[`#345 - acorn loose - async (a = 1) => {} 1`] = `
+exports[`#372 - acorn loose - async (a = 1) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -7559,6 +8587,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -7572,7 +8601,7 @@ Object {
 }
 `;
 
-exports[`#346 - acorn loose - async (a) => a * 3 * a 1`] = `
+exports[`#373 - acorn loose - async (a) => a * 3 * a 1`] = `
 Object {
   "args": Array [
     "a",
@@ -7581,6 +8610,7 @@ Object {
   "defaults": Object {
     "a": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -7594,7 +8624,7 @@ Object {
 }
 `;
 
-exports[`#347 - acorn loose - async d => d * 355 * d 1`] = `
+exports[`#374 - acorn loose - async d => d * 355 * d 1`] = `
 Object {
   "args": Array [
     "d",
@@ -7603,6 +8633,7 @@ Object {
   "defaults": Object {
     "d": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -7616,7 +8647,7 @@ Object {
 }
 `;
 
-exports[`#348 - acorn loose - async e => {return e + 5235 / e} 1`] = `
+exports[`#375 - acorn loose - async e => {return e + 5235 / e} 1`] = `
 Object {
   "args": Array [
     "e",
@@ -7625,6 +8656,7 @@ Object {
   "defaults": Object {
     "e": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -7638,7 +8670,7 @@ Object {
 }
 `;
 
-exports[`#349 - acorn loose - async (a, b) => a + 3 + b 1`] = `
+exports[`#376 - acorn loose - async (a, b) => a + 3 + b 1`] = `
 Object {
   "args": Array [
     "a",
@@ -7649,6 +8681,7 @@ Object {
     "a": undefined,
     "b": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -7662,7 +8695,7 @@ Object {
 }
 `;
 
-exports[`#350 - acorn loose - async (x, y, ...restArgs) => console.log({ value: x * y }) 1`] = `
+exports[`#377 - acorn loose - async (x, y, ...restArgs) => console.log({ value: x * y }) 1`] = `
 Object {
   "args": Array [
     "x",
@@ -7675,6 +8708,7 @@ Object {
     "x": undefined,
     "y": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -7688,7 +8722,33 @@ Object {
 }
 `;
 
-exports[`#351 - acorn loose - should return object with default values when invalid 1`] = `
+exports[`#378 - acorn loose - async ({x, y}) => {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": true,
+  "isArrow": true,
+  "isAsync": true,
+  "isExpression": false,
+  "isGenerator": false,
+  "isNamed": false,
+  "isValid": true,
+  "name": null,
+  "params": "false",
+  "value": "(async ({x, y}) => {})",
+}
+`;
+
+exports[`#379 - acorn loose - should return object with default values when invalid 1`] = `
 Object {
   "args": Array [],
   "body": "",
@@ -7706,7 +8766,7 @@ Object {
 }
 `;
 
-exports[`#352 - acorn loose - should have '.isValid' and few '.is*'' hidden properties 1`] = `
+exports[`#380 - acorn loose - should have '.isValid' and few '.is*'' hidden properties 1`] = `
 Object {
   "args": Array [],
   "body": "",
@@ -7724,7 +8784,7 @@ Object {
 }
 `;
 
-exports[`#357 - acorn loose - should work for object methods 1`] = `
+exports[`#385 - acorn loose - should work for object methods 1`] = `
 Object {
   "args": Array [
     "a",
@@ -7739,6 +8799,7 @@ Object {
     "b": undefined,
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -7754,7 +8815,7 @@ Object {
 }
 `;
 
-exports[`#357 - acorn loose - should work for object methods 2`] = `
+exports[`#385 - acorn loose - should work for object methods 2`] = `
 Object {
   "args": Array [
     "a",
@@ -7765,6 +8826,7 @@ Object {
   "defaults": Object {
     "a": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -7780,7 +8842,7 @@ Object {
 }
 `;
 
-exports[`#357 - acorn loose - should work for object methods 3`] = `
+exports[`#385 - acorn loose - should work for object methods 3`] = `
 Object {
   "args": Array [
     "a",
@@ -7791,6 +8853,7 @@ Object {
   "defaults": Object {
     "a": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -7806,7 +8869,7 @@ Object {
 }
 `;
 
-exports[`#357 - acorn loose - should work for object methods 4`] = `
+exports[`#385 - acorn loose - should work for object methods 4`] = `
 Object {
   "args": Array [
     "a",
@@ -7819,6 +8882,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -7832,7 +8896,7 @@ Object {
 }
 `;
 
-exports[`#361 - espree.parse - function (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
+exports[`#389 - espree.parse - function (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -7845,6 +8909,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -7858,7 +8923,7 @@ Object {
 }
 `;
 
-exports[`#362 - espree.parse - function (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
+exports[`#390 - espree.parse - function (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -7871,6 +8936,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -7884,7 +8950,7 @@ Object {
 }
 `;
 
-exports[`#363 - espree.parse - function (c) {return c * 3} 1`] = `
+exports[`#391 - espree.parse - function (c) {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -7893,6 +8959,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -7906,7 +8973,7 @@ Object {
 }
 `;
 
-exports[`#364 - espree.parse - function (...restArgs) {return 321} 1`] = `
+exports[`#392 - espree.parse - function (...restArgs) {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -7915,6 +8982,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -7928,11 +8996,12 @@ Object {
 }
 `;
 
-exports[`#365 - espree.parse - function () {} 1`] = `
+exports[`#393 - espree.parse - function () {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -7946,7 +9015,7 @@ Object {
 }
 `;
 
-exports[`#366 - espree.parse - function (a = (true, false)) {} 1`] = `
+exports[`#394 - espree.parse - function (a = (true, false)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -7955,6 +9024,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -7968,7 +9038,7 @@ Object {
 }
 `;
 
-exports[`#367 - espree.parse - function (a = (true, null)) {} 1`] = `
+exports[`#395 - espree.parse - function (a = (true, null)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -7977,6 +9047,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -7990,7 +9061,7 @@ Object {
 }
 `;
 
-exports[`#368 - espree.parse - function (a = (true, "bar")) {} 1`] = `
+exports[`#396 - espree.parse - function (a = (true, "bar")) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -7999,6 +9070,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -8012,7 +9084,7 @@ Object {
 }
 `;
 
-exports[`#369 - espree.parse - function (a, b = (i++, true)) {} 1`] = `
+exports[`#397 - espree.parse - function (a, b = (i++, true)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -8023,6 +9095,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -8036,7 +9109,7 @@ Object {
 }
 `;
 
-exports[`#370 - espree.parse - function (a = 1) {} 1`] = `
+exports[`#398 - espree.parse - function (a = 1) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -8045,6 +9118,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": false,
@@ -8058,7 +9132,33 @@ Object {
 }
 `;
 
-exports[`#371 - espree.parse - function namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
+exports[`#399 - espree.parse - function ({x, y}) {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": true,
+  "isArrow": false,
+  "isAsync": false,
+  "isExpression": false,
+  "isGenerator": false,
+  "isNamed": false,
+  "isValid": true,
+  "name": null,
+  "params": "false",
+  "value": "(function ({x, y}) {})",
+}
+`;
+
+exports[`#400 - espree.parse - function namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -8071,6 +9171,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -8084,7 +9185,7 @@ Object {
 }
 `;
 
-exports[`#372 - espree.parse - function namedFn (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
+exports[`#401 - espree.parse - function namedFn (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -8097,6 +9198,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -8110,7 +9212,7 @@ Object {
 }
 `;
 
-exports[`#373 - espree.parse - function namedFn (c) {return c * 3} 1`] = `
+exports[`#402 - espree.parse - function namedFn (c) {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -8119,6 +9221,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -8132,7 +9235,7 @@ Object {
 }
 `;
 
-exports[`#374 - espree.parse - function namedFn (...restArgs) {return 321} 1`] = `
+exports[`#403 - espree.parse - function namedFn (...restArgs) {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -8141,6 +9244,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -8154,11 +9258,12 @@ Object {
 }
 `;
 
-exports[`#375 - espree.parse - function namedFn () {} 1`] = `
+exports[`#404 - espree.parse - function namedFn () {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -8172,7 +9277,7 @@ Object {
 }
 `;
 
-exports[`#376 - espree.parse - function namedFn(a = (true, false)) {} 1`] = `
+exports[`#405 - espree.parse - function namedFn(a = (true, false)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -8181,6 +9286,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -8194,7 +9300,7 @@ Object {
 }
 `;
 
-exports[`#377 - espree.parse - function namedFn(a = (true, null)) {} 1`] = `
+exports[`#406 - espree.parse - function namedFn(a = (true, null)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -8203,6 +9309,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -8216,7 +9323,7 @@ Object {
 }
 `;
 
-exports[`#378 - espree.parse - function namedFn(a = (true, "bar")) {} 1`] = `
+exports[`#407 - espree.parse - function namedFn(a = (true, "bar")) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -8225,6 +9332,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -8238,7 +9346,7 @@ Object {
 }
 `;
 
-exports[`#379 - espree.parse - function namedFn(a, b = (i++, true)) {} 1`] = `
+exports[`#408 - espree.parse - function namedFn(a, b = (i++, true)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -8249,6 +9357,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -8262,7 +9371,7 @@ Object {
 }
 `;
 
-exports[`#380 - espree.parse - function namedFn(a = 1) {} 1`] = `
+exports[`#409 - espree.parse - function namedFn(a = 1) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -8271,6 +9380,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -8284,7 +9394,33 @@ Object {
 }
 `;
 
-exports[`#381 - espree.parse - function * namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
+exports[`#410 - espree.parse - function namedFn({x, y}) {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": false,
+  "isArrow": false,
+  "isAsync": false,
+  "isExpression": false,
+  "isGenerator": false,
+  "isNamed": true,
+  "isValid": true,
+  "name": "namedFn",
+  "params": "false",
+  "value": "(function namedFn({x, y}) {})",
+}
+`;
+
+exports[`#411 - espree.parse - function * namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -8297,6 +9433,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -8310,7 +9447,7 @@ Object {
 }
 `;
 
-exports[`#382 - espree.parse - function * namedFn (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
+exports[`#412 - espree.parse - function * namedFn (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -8323,6 +9460,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -8336,7 +9474,7 @@ Object {
 }
 `;
 
-exports[`#383 - espree.parse - function * namedFn (c) {return c * 3} 1`] = `
+exports[`#413 - espree.parse - function * namedFn (c) {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -8345,6 +9483,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -8358,7 +9497,7 @@ Object {
 }
 `;
 
-exports[`#384 - espree.parse - function * namedFn (...restArgs) {return 321} 1`] = `
+exports[`#414 - espree.parse - function * namedFn (...restArgs) {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -8367,6 +9506,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -8380,11 +9520,12 @@ Object {
 }
 `;
 
-exports[`#385 - espree.parse - function * namedFn () {} 1`] = `
+exports[`#415 - espree.parse - function * namedFn () {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -8398,7 +9539,7 @@ Object {
 }
 `;
 
-exports[`#386 - espree.parse - function * namedFn(a = (true, false)) {} 1`] = `
+exports[`#416 - espree.parse - function * namedFn(a = (true, false)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -8407,6 +9548,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -8420,7 +9562,7 @@ Object {
 }
 `;
 
-exports[`#387 - espree.parse - function * namedFn(a = (true, null)) {} 1`] = `
+exports[`#417 - espree.parse - function * namedFn(a = (true, null)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -8429,6 +9571,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -8442,7 +9585,7 @@ Object {
 }
 `;
 
-exports[`#388 - espree.parse - function * namedFn(a = (true, "bar")) {} 1`] = `
+exports[`#418 - espree.parse - function * namedFn(a = (true, "bar")) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -8451,6 +9594,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -8464,7 +9608,7 @@ Object {
 }
 `;
 
-exports[`#389 - espree.parse - function * namedFn(a, b = (i++, true)) {} 1`] = `
+exports[`#419 - espree.parse - function * namedFn(a, b = (i++, true)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -8475,6 +9619,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -8488,7 +9633,7 @@ Object {
 }
 `;
 
-exports[`#390 - espree.parse - function * namedFn(a = 1) {} 1`] = `
+exports[`#420 - espree.parse - function * namedFn(a = 1) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -8497,6 +9642,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -8510,7 +9656,33 @@ Object {
 }
 `;
 
-exports[`#391 - espree.parse - (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) => {return a * 3} 1`] = `
+exports[`#421 - espree.parse - function * namedFn({x, y}) {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": false,
+  "isArrow": false,
+  "isAsync": false,
+  "isExpression": false,
+  "isGenerator": true,
+  "isNamed": true,
+  "isValid": true,
+  "name": "namedFn",
+  "params": "false",
+  "value": "(function * namedFn({x, y}) {})",
+}
+`;
+
+exports[`#422 - espree.parse - (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) => {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -8523,6 +9695,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -8536,7 +9709,7 @@ Object {
 }
 `;
 
-exports[`#392 - espree.parse - (b, callback, ...restArgs) => {callback(null, b + 3)} 1`] = `
+exports[`#423 - espree.parse - (b, callback, ...restArgs) => {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -8549,6 +9722,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -8562,7 +9736,7 @@ Object {
 }
 `;
 
-exports[`#393 - espree.parse - (c) => {return c * 3} 1`] = `
+exports[`#424 - espree.parse - (c) => {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -8571,6 +9745,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -8584,7 +9759,7 @@ Object {
 }
 `;
 
-exports[`#394 - espree.parse - (...restArgs) => {return 321} 1`] = `
+exports[`#425 - espree.parse - (...restArgs) => {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -8593,6 +9768,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -8606,11 +9782,12 @@ Object {
 }
 `;
 
-exports[`#395 - espree.parse - () => {} 1`] = `
+exports[`#426 - espree.parse - () => {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -8624,7 +9801,7 @@ Object {
 }
 `;
 
-exports[`#396 - espree.parse - (a = (true, false)) => {} 1`] = `
+exports[`#427 - espree.parse - (a = (true, false)) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -8633,6 +9810,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -8646,7 +9824,7 @@ Object {
 }
 `;
 
-exports[`#397 - espree.parse - (a = (true, null)) => {} 1`] = `
+exports[`#428 - espree.parse - (a = (true, null)) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -8655,6 +9833,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -8668,7 +9847,7 @@ Object {
 }
 `;
 
-exports[`#398 - espree.parse - (a = (true, "bar")) => {} 1`] = `
+exports[`#429 - espree.parse - (a = (true, "bar")) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -8677,6 +9856,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -8690,7 +9870,7 @@ Object {
 }
 `;
 
-exports[`#399 - espree.parse - (a, b = (i++, true)) => {} 1`] = `
+exports[`#430 - espree.parse - (a, b = (i++, true)) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -8701,6 +9881,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -8714,7 +9895,7 @@ Object {
 }
 `;
 
-exports[`#400 - espree.parse - (a = 1) => {} 1`] = `
+exports[`#431 - espree.parse - (a = 1) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -8723,6 +9904,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -8736,7 +9918,7 @@ Object {
 }
 `;
 
-exports[`#401 - espree.parse - (a) => a * 3 * a 1`] = `
+exports[`#432 - espree.parse - (a) => a * 3 * a 1`] = `
 Object {
   "args": Array [
     "a",
@@ -8745,6 +9927,7 @@ Object {
   "defaults": Object {
     "a": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -8758,7 +9941,7 @@ Object {
 }
 `;
 
-exports[`#402 - espree.parse - d => d * 355 * d 1`] = `
+exports[`#433 - espree.parse - d => d * 355 * d 1`] = `
 Object {
   "args": Array [
     "d",
@@ -8767,6 +9950,7 @@ Object {
   "defaults": Object {
     "d": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -8780,7 +9964,7 @@ Object {
 }
 `;
 
-exports[`#403 - espree.parse - e => {return e + 5235 / e} 1`] = `
+exports[`#434 - espree.parse - e => {return e + 5235 / e} 1`] = `
 Object {
   "args": Array [
     "e",
@@ -8789,6 +9973,7 @@ Object {
   "defaults": Object {
     "e": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -8802,7 +9987,7 @@ Object {
 }
 `;
 
-exports[`#404 - espree.parse - (a, b) => a + 3 + b 1`] = `
+exports[`#435 - espree.parse - (a, b) => a + 3 + b 1`] = `
 Object {
   "args": Array [
     "a",
@@ -8813,6 +9998,7 @@ Object {
     "a": undefined,
     "b": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -8826,7 +10012,7 @@ Object {
 }
 `;
 
-exports[`#405 - espree.parse - (x, y, ...restArgs) => console.log({ value: x * y }) 1`] = `
+exports[`#436 - espree.parse - (x, y, ...restArgs) => console.log({ value: x * y }) 1`] = `
 Object {
   "args": Array [
     "x",
@@ -8839,6 +10025,7 @@ Object {
     "x": undefined,
     "y": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": false,
@@ -8852,7 +10039,33 @@ Object {
 }
 `;
 
-exports[`#406 - espree.parse - async function (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
+exports[`#437 - espree.parse - ({x, y}) => {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": true,
+  "isArrow": true,
+  "isAsync": false,
+  "isExpression": false,
+  "isGenerator": false,
+  "isNamed": false,
+  "isValid": true,
+  "name": null,
+  "params": "false",
+  "value": "(({x, y}) => {})",
+}
+`;
+
+exports[`#438 - espree.parse - async function (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -8865,6 +10078,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -8878,7 +10092,7 @@ Object {
 }
 `;
 
-exports[`#407 - espree.parse - async function (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
+exports[`#439 - espree.parse - async function (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -8891,6 +10105,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -8904,7 +10119,7 @@ Object {
 }
 `;
 
-exports[`#408 - espree.parse - async function (c) {return c * 3} 1`] = `
+exports[`#440 - espree.parse - async function (c) {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -8913,6 +10128,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -8926,7 +10142,7 @@ Object {
 }
 `;
 
-exports[`#409 - espree.parse - async function (...restArgs) {return 321} 1`] = `
+exports[`#441 - espree.parse - async function (...restArgs) {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -8935,6 +10151,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -8948,11 +10165,12 @@ Object {
 }
 `;
 
-exports[`#410 - espree.parse - async function () {} 1`] = `
+exports[`#442 - espree.parse - async function () {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -8966,7 +10184,7 @@ Object {
 }
 `;
 
-exports[`#411 - espree.parse - async function (a = (true, false)) {} 1`] = `
+exports[`#443 - espree.parse - async function (a = (true, false)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -8975,6 +10193,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -8988,7 +10207,7 @@ Object {
 }
 `;
 
-exports[`#412 - espree.parse - async function (a = (true, null)) {} 1`] = `
+exports[`#444 - espree.parse - async function (a = (true, null)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -8997,6 +10216,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -9010,7 +10230,7 @@ Object {
 }
 `;
 
-exports[`#413 - espree.parse - async function (a = (true, "bar")) {} 1`] = `
+exports[`#445 - espree.parse - async function (a = (true, "bar")) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -9019,6 +10239,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -9032,7 +10253,7 @@ Object {
 }
 `;
 
-exports[`#414 - espree.parse - async function (a, b = (i++, true)) {} 1`] = `
+exports[`#446 - espree.parse - async function (a, b = (i++, true)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -9043,6 +10264,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -9056,7 +10278,7 @@ Object {
 }
 `;
 
-exports[`#415 - espree.parse - async function (a = 1) {} 1`] = `
+exports[`#447 - espree.parse - async function (a = 1) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -9065,6 +10287,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": false,
   "isAsync": true,
@@ -9078,7 +10301,33 @@ Object {
 }
 `;
 
-exports[`#416 - espree.parse - async function namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
+exports[`#448 - espree.parse - async function ({x, y}) {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": true,
+  "isArrow": false,
+  "isAsync": true,
+  "isExpression": false,
+  "isGenerator": false,
+  "isNamed": false,
+  "isValid": true,
+  "name": null,
+  "params": "false",
+  "value": "(async function ({x, y}) {})",
+}
+`;
+
+exports[`#449 - espree.parse - async function namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -9091,6 +10340,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -9104,7 +10354,7 @@ Object {
 }
 `;
 
-exports[`#417 - espree.parse - async function namedFn (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
+exports[`#450 - espree.parse - async function namedFn (b, callback, ...restArgs) {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -9117,6 +10367,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -9130,7 +10381,7 @@ Object {
 }
 `;
 
-exports[`#418 - espree.parse - async function namedFn (c) {return c * 3} 1`] = `
+exports[`#451 - espree.parse - async function namedFn (c) {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -9139,6 +10390,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -9152,7 +10404,7 @@ Object {
 }
 `;
 
-exports[`#419 - espree.parse - async function namedFn (...restArgs) {return 321} 1`] = `
+exports[`#452 - espree.parse - async function namedFn (...restArgs) {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -9161,6 +10413,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -9174,11 +10427,12 @@ Object {
 }
 `;
 
-exports[`#420 - espree.parse - async function namedFn () {} 1`] = `
+exports[`#453 - espree.parse - async function namedFn () {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -9192,7 +10446,7 @@ Object {
 }
 `;
 
-exports[`#421 - espree.parse - async function namedFn(a = (true, false)) {} 1`] = `
+exports[`#454 - espree.parse - async function namedFn(a = (true, false)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -9201,6 +10455,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -9214,7 +10469,7 @@ Object {
 }
 `;
 
-exports[`#422 - espree.parse - async function namedFn(a = (true, null)) {} 1`] = `
+exports[`#455 - espree.parse - async function namedFn(a = (true, null)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -9223,6 +10478,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -9236,7 +10492,7 @@ Object {
 }
 `;
 
-exports[`#423 - espree.parse - async function namedFn(a = (true, "bar")) {} 1`] = `
+exports[`#456 - espree.parse - async function namedFn(a = (true, "bar")) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -9245,6 +10501,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -9258,7 +10515,7 @@ Object {
 }
 `;
 
-exports[`#424 - espree.parse - async function namedFn(a, b = (i++, true)) {} 1`] = `
+exports[`#457 - espree.parse - async function namedFn(a, b = (i++, true)) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -9269,6 +10526,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -9282,7 +10540,7 @@ Object {
 }
 `;
 
-exports[`#425 - espree.parse - async function namedFn(a = 1) {} 1`] = `
+exports[`#458 - espree.parse - async function namedFn(a = 1) {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -9291,6 +10549,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": true,
@@ -9304,7 +10563,33 @@ Object {
 }
 `;
 
-exports[`#426 - espree.parse - async (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) => {return a * 3} 1`] = `
+exports[`#459 - espree.parse - async function namedFn({x, y}) {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": false,
+  "isArrow": false,
+  "isAsync": true,
+  "isExpression": false,
+  "isGenerator": false,
+  "isNamed": true,
+  "isValid": true,
+  "name": "namedFn",
+  "params": "false",
+  "value": "(async function namedFn({x, y}) {})",
+}
+`;
+
+exports[`#460 - espree.parse - async (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) => {return a * 3} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -9317,6 +10602,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -9330,7 +10616,7 @@ Object {
 }
 `;
 
-exports[`#427 - espree.parse - async (b, callback, ...restArgs) => {callback(null, b + 3)} 1`] = `
+exports[`#461 - espree.parse - async (b, callback, ...restArgs) => {callback(null, b + 3)} 1`] = `
 Object {
   "args": Array [
     "b",
@@ -9343,6 +10629,7 @@ Object {
     "callback": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -9356,7 +10643,7 @@ Object {
 }
 `;
 
-exports[`#428 - espree.parse - async (c) => {return c * 3} 1`] = `
+exports[`#462 - espree.parse - async (c) => {return c * 3} 1`] = `
 Object {
   "args": Array [
     "c",
@@ -9365,6 +10652,7 @@ Object {
   "defaults": Object {
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -9378,7 +10666,7 @@ Object {
 }
 `;
 
-exports[`#429 - espree.parse - async (...restArgs) => {return 321} 1`] = `
+exports[`#463 - espree.parse - async (...restArgs) => {return 321} 1`] = `
 Object {
   "args": Array [
     "restArgs",
@@ -9387,6 +10675,7 @@ Object {
   "defaults": Object {
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -9400,11 +10689,12 @@ Object {
 }
 `;
 
-exports[`#430 - espree.parse - async () => {} 1`] = `
+exports[`#464 - espree.parse - async () => {} 1`] = `
 Object {
   "args": Array [],
   "body": "",
   "defaults": Object {},
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -9418,7 +10708,7 @@ Object {
 }
 `;
 
-exports[`#431 - espree.parse - async (a = (true, false)) => {} 1`] = `
+exports[`#465 - espree.parse - async (a = (true, false)) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -9427,6 +10717,7 @@ Object {
   "defaults": Object {
     "a": "false",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -9440,7 +10731,7 @@ Object {
 }
 `;
 
-exports[`#432 - espree.parse - async (a = (true, null)) => {} 1`] = `
+exports[`#466 - espree.parse - async (a = (true, null)) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -9449,6 +10740,7 @@ Object {
   "defaults": Object {
     "a": "null",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -9462,7 +10754,7 @@ Object {
 }
 `;
 
-exports[`#433 - espree.parse - async (a = (true, "bar")) => {} 1`] = `
+exports[`#467 - espree.parse - async (a = (true, "bar")) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -9471,6 +10763,7 @@ Object {
   "defaults": Object {
     "a": "\\"bar\\"",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -9484,7 +10777,7 @@ Object {
 }
 `;
 
-exports[`#434 - espree.parse - async (a, b = (i++, true)) => {} 1`] = `
+exports[`#468 - espree.parse - async (a, b = (i++, true)) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -9495,6 +10788,7 @@ Object {
     "a": undefined,
     "b": "true",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -9508,7 +10802,7 @@ Object {
 }
 `;
 
-exports[`#435 - espree.parse - async (a = 1) => {} 1`] = `
+exports[`#469 - espree.parse - async (a = 1) => {} 1`] = `
 Object {
   "args": Array [
     "a",
@@ -9517,6 +10811,7 @@ Object {
   "defaults": Object {
     "a": "1",
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -9530,7 +10825,7 @@ Object {
 }
 `;
 
-exports[`#436 - espree.parse - async (a) => a * 3 * a 1`] = `
+exports[`#470 - espree.parse - async (a) => a * 3 * a 1`] = `
 Object {
   "args": Array [
     "a",
@@ -9539,6 +10834,7 @@ Object {
   "defaults": Object {
     "a": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -9552,7 +10848,7 @@ Object {
 }
 `;
 
-exports[`#437 - espree.parse - async d => d * 355 * d 1`] = `
+exports[`#471 - espree.parse - async d => d * 355 * d 1`] = `
 Object {
   "args": Array [
     "d",
@@ -9561,6 +10857,7 @@ Object {
   "defaults": Object {
     "d": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -9574,7 +10871,7 @@ Object {
 }
 `;
 
-exports[`#438 - espree.parse - async e => {return e + 5235 / e} 1`] = `
+exports[`#472 - espree.parse - async e => {return e + 5235 / e} 1`] = `
 Object {
   "args": Array [
     "e",
@@ -9583,6 +10880,7 @@ Object {
   "defaults": Object {
     "e": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -9596,7 +10894,7 @@ Object {
 }
 `;
 
-exports[`#439 - espree.parse - async (a, b) => a + 3 + b 1`] = `
+exports[`#473 - espree.parse - async (a, b) => a + 3 + b 1`] = `
 Object {
   "args": Array [
     "a",
@@ -9607,6 +10905,7 @@ Object {
     "a": undefined,
     "b": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -9620,7 +10919,7 @@ Object {
 }
 `;
 
-exports[`#440 - espree.parse - async (x, y, ...restArgs) => console.log({ value: x * y }) 1`] = `
+exports[`#474 - espree.parse - async (x, y, ...restArgs) => console.log({ value: x * y }) 1`] = `
 Object {
   "args": Array [
     "x",
@@ -9633,6 +10932,7 @@ Object {
     "x": undefined,
     "y": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,
@@ -9646,7 +10946,33 @@ Object {
 }
 `;
 
-exports[`#441 - espree.parse - should return object with default values when invalid 1`] = `
+exports[`#475 - espree.parse - async ({x, y}) => {} 1`] = `
+Object {
+  "args": Array [
+    false,
+  ],
+  "body": "",
+  "defaults": Object {
+    "false": undefined,
+  },
+  "destructuredArgs": Array [
+    "x",
+    "y",
+  ],
+  "isAnonymous": true,
+  "isArrow": true,
+  "isAsync": true,
+  "isExpression": false,
+  "isGenerator": false,
+  "isNamed": false,
+  "isValid": true,
+  "name": null,
+  "params": "false",
+  "value": "(async ({x, y}) => {})",
+}
+`;
+
+exports[`#476 - espree.parse - should return object with default values when invalid 1`] = `
 Object {
   "args": Array [],
   "body": "",
@@ -9664,7 +10990,7 @@ Object {
 }
 `;
 
-exports[`#442 - espree.parse - should have '.isValid' and few '.is*'' hidden properties 1`] = `
+exports[`#477 - espree.parse - should have '.isValid' and few '.is*'' hidden properties 1`] = `
 Object {
   "args": Array [],
   "body": "",
@@ -9682,7 +11008,7 @@ Object {
 }
 `;
 
-exports[`#447 - espree.parse - should work for object methods 1`] = `
+exports[`#482 - espree.parse - should work for object methods 1`] = `
 Object {
   "args": Array [
     "a",
@@ -9697,6 +11023,7 @@ Object {
     "b": undefined,
     "c": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -9712,7 +11039,7 @@ Object {
 }
 `;
 
-exports[`#447 - espree.parse - should work for object methods 2`] = `
+exports[`#482 - espree.parse - should work for object methods 2`] = `
 Object {
   "args": Array [
     "a",
@@ -9723,6 +11050,7 @@ Object {
   "defaults": Object {
     "a": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -9738,7 +11066,7 @@ Object {
 }
 `;
 
-exports[`#447 - espree.parse - should work for object methods 3`] = `
+exports[`#482 - espree.parse - should work for object methods 3`] = `
 Object {
   "args": Array [
     "a",
@@ -9749,6 +11077,7 @@ Object {
   "defaults": Object {
     "a": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -9764,7 +11093,7 @@ Object {
 }
 `;
 
-exports[`#447 - espree.parse - should work for object methods 4`] = `
+exports[`#482 - espree.parse - should work for object methods 4`] = `
 Object {
   "args": Array [
     "a",
@@ -9777,6 +11106,7 @@ Object {
     "cb": undefined,
     "restArgs": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": false,
   "isArrow": false,
   "isAsync": false,
@@ -9799,6 +11129,7 @@ Object {
   "defaults": Object {
     "v": undefined,
   },
+  "destructuredArgs": Array [],
   "isAnonymous": true,
   "isArrow": true,
   "isAsync": true,

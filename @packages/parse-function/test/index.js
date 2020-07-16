@@ -22,6 +22,7 @@ const fixtures = {
     'function (a = (true, "bar")) {}',
     'function (a, b = (i++, true)) {}',
     'function (a = 1) {}',
+    'function ({x, y}) {}',
   ],
   named: [
     'function namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3}',
@@ -34,6 +35,7 @@ const fixtures = {
     'function namedFn(a = (true, "bar")) {}',
     'function namedFn(a, b = (i++, true)) {}',
     'function namedFn(a = 1) {}',
+    'function namedFn({x, y}) {}',
   ],
   generators: [
     'function * namedFn (a = {foo: "ba)r", baz: 123}, cb, ...restArgs) {return a * 3}',
@@ -46,6 +48,7 @@ const fixtures = {
     'function * namedFn(a = (true, "bar")) {}',
     'function * namedFn(a, b = (i++, true)) {}',
     'function * namedFn(a = 1) {}',
+    'function * namedFn({x, y}) {}',
   ],
   arrows: [
     '(a = {foo: "ba)r", baz: 123}, cb, ...restArgs) => {return a * 3}',
@@ -63,6 +66,7 @@ const fixtures = {
     'e => {return e + 5235 / e}',
     '(a, b) => a + 3 + b',
     '(x, y, ...restArgs) => console.log({ value: x * y })',
+    '({x, y}) => {}',
   ],
 };
 

@@ -3,6 +3,7 @@
 import body from './body';
 import props from './props';
 import params from './params';
+import destructuredArgs from './destructured-args';
 
 /**
  * > Default plugin that handles regular functions,
@@ -36,6 +37,7 @@ export default (app) => (node, result) => {
 
   result = props(app)(node, result);
   result = params(app)(node, result);
+  result = destructuredArgs(app)(node, result);
   result = body(app)(node, result);
 
   // eslint-disable-next-line consistent-return
