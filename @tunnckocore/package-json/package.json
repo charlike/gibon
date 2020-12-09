@@ -30,7 +30,7 @@
   },
   "scripts": {},
   "dependencies": {
-    "ky": "^0.19.0",
+    "ky": "^0.25.0",
     "ky-universal": "^0.5.0",
     "parse-package-name": "^0.1.0"
   },
