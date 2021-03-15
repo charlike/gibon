@@ -29,7 +29,7 @@
   },
   "scripts": {},
   "dependencies": {
-    "cacache": "^13.0.1",
+    "cacache": "^15.0.0",
     "fast-glob": "^3.1.1",
     "memoize-fs": "^2.1.0"
   },
