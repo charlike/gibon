@@ -22,9 +22,9 @@ test('.parseHeader NOT throw when header is valid by conventional commits', () =
   const two = parseHeader('fix(cli): aaaa qux');
   const res = parseHeader('fix(cli): qqqqq qux\n\nSome awesome body');
 
-  expect(one && typeof one === 'object').toBe(true);
-  expect(two && typeof two === 'object').toBe(true);
-  expect(res && typeof res === 'object').toBe(true);
+  expect(typeof one === 'object').toBe(true);
+  expect(typeof two === 'object').toBe(true);
+  expect(typeof res === 'object').toBe(true);
 });
 
 test('.parseHeader correctly header string without scope', () => {
